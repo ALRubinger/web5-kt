@@ -1,9 +1,13 @@
-name: Publish package to the Maven Central Repository
+name: Release and Publish to Maven Central
 on:
   workflow_dispatch:
     inputs:
       version:
-        description: 'Version to publish. For example "0.0.1"'
+        description: 'Version to publish. For example "1.0.0 or 1.0.0-SNAPSHOT"'
+        required: true
+        default: '0.0.0'
+      developmentVersion:
+        description: 'Next development version. For example "1.1.0". The system will append "-SNAPSHOT" to the end of this input to reflect the next development version.'
         required: true
         default: "0.0.0"
 jobs:
@@ -20,21 +24,34 @@ jobs:
 
       - uses: actions/cache@v3
         with:
-          path: ~/.gradle/caches
-          key: gradle-ubuntu-latest-${{ hashFiles('**/*.gradle.kts') }}-${{ hashFiles('**/gradle/wrapper/gradle-wrapper.properties') }}-${{ hashFiles('**/versions.properties') }}
+          path: ~/.m2/repository
+          key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+          restore-keys: |
+            ${{ runner.os }}-maven-
 
-      - name: Sonatype Publish Close And Release
+      # Adapted from: https://gist.github.com/sualeh/ae78dc16123899d7942bc38baba5203c
+      - name: Install gpg secret key
         run: |
-          if [ -n "${{ github.event.inputs.version }}" ]; then
-            gradle -Pversion=${{ github.event.inputs.version }} publishToSonatype closeAndReleaseSonatypeStagingRepository
-          else
-            gradle -Pversion=$(echo "${{ github.ref_name }}" | cut -c2-) publishToSonatype closeAndReleaseSonatypeStagingRepository
-          fi
+          # Install gpg secret key
+          cat <(echo -e "${{ secrets.GPG_SECRET_KEY }}") | gpg --batch --import
+          # Verify gpg secret key
+          gpg --list-secret-keys --keyid-format LONG
+
+      # This will set versions, git tag, and publish to TBD Artifactory. Does not release to Maven Central.
+      - name: Staging - Prepare and Publish Release to TBD Artifactory
+        run: |
+            mvn \
+              release:prepare \
+              release:stage \
+              --batch-mode \
+              --settings .maven_settings.xml \
+              -DreleaseVersion=${{ github.event.inputs.version }} \
+              -DdevelopmentVersion=${{ github.event.inputs.developmentVersion }} \
+              -Dgpg.passphrase=${{ secrets.GPG_SECRET_PASSPHRASE }} \
+              -DstagingRepository=https://blockxyz.jfrog.io/artifactory/tbd-oss-releases-maven2
         env:
-          ORG_GRADLE_PROJECT_signingKey: ${{ secrets.ORG_GRADLE_PROJECT_SIGNINGKEY }}
-          ORG_GRADLE_PROJECT_signingPassword: ${{ secrets.ORG_GRADLE_PROJECT_SIGNINGPASSWORD }}
-          ORG_GRADLE_PROJECT_sonatypeUsername: ${{ secrets.ORG_GRADLE_PROJECT_SONATYPEUSERNAME }}
-          ORG_GRADLE_PROJECT_sonatypePassword: ${{ secrets.ORG_GRADLE_PROJECT_SONATYPEPASSWORD }}
+            ARTIFACTORY_USERNAME: ${{ secrets.ARTIFACTORY_USERNAME }}
+            ARTIFACTORY_PASSWORD: ${{ secrets.ARTIFACTORY_PASSWORD }}
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v1
