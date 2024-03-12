@@ -7,7 +7,7 @@
 
   <!-- Artifact Information  -->
   <groupId>xyz.block</groupId>
-  <artifactId>web5</artifactId>
+  <artifactId>web5-parent</artifactId>
   <version>0.13.0-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>Web5 SDK for the JVM</name>
@@ -17,9 +17,10 @@
 
   <!-- SCM -->
   <scm>
-    <connection>scm:git:git://github.com/TBD54566975/web5-kt.git</connection>
-    <developerConnection>scm:git:git@github.com:TBD54566975/web5-kt.git</developerConnection>
-    <url>https://github.com/TBD54566975/web5-kt</url>
+    <connection>scm:git:git://github.com/ALRubinger/web5-kt.git</connection>
+    <!-- This has to be HTTPS, not git://, for maven-release-plugin to do AUTH correctly -->
+    <developerConnection>scm:git:https://github.com/ALRubinger/web5-kt.git</developerConnection>
+    <url>https://github.com/ALRubinger/web5-kt</url>
     <tag>HEAD</tag>
   </scm>
 
@@ -54,6 +55,7 @@
     <module>crypto</module>
     <module>dids</module>
     <module>testing</module>
+    <module>web5</module>
   </modules>
 
   <!-- Properties -->
@@ -62,6 +64,8 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <kotlin.jvm.target>11</kotlin.jvm.target>
     <kotlin.compiler.incremental>true</kotlin.compiler.incremental>
+    <!-- Defines the server config in .maven_settings.xml to use in maven-release-plugin -->
+    <project.scm.id>github</project.scm.id>
 
     <!--
     This section is where we declare the versioning and scope for dependencies of
@@ -384,6 +388,19 @@
           <version>3.0.2</version>
         </plugin>
         <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-source-plugin</artifactId>
+          <version>3.3.0</version>
+          <executions>
+            <execution>
+              <id>attach-sources</id>
+              <goals>
+                <goal>jar</goal>
+              </goals>
+            </execution>
+          </executions>
+        </plugin>
+        <plugin>
           <artifactId>maven-compiler-plugin</artifactId>
           <version>3.8.0</version>
         </plugin>
@@ -413,8 +430,20 @@
           <version>2.8.2</version>
         </plugin>
         <plugin>
-          <artifactId>maven-gpg-plugin</artifactId>
-          <version>3.1.0</version>
+          <groupId>org.simplify4u.plugins</groupId>
+          <artifactId>sign-maven-plugin</artifactId>
+          <version>1.1.0</version>
+          <executions>
+            <execution>
+              <goals>
+                <goal>sign</goal>
+              </goals>
+            </execution>
+          </executions>
+        </plugin>
+        <plugin>
+          <artifactId>maven-release-plugin</artifactId>
+          <version>3.0.1</version>
         </plugin>
         <!-- site lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#site_Lifecycle -->
         <plugin>
@@ -436,6 +465,11 @@
           <version>${version.io.github.martinvisser}</version>
         </plugin>
         <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>exec-maven-plugin</artifactId>
+          <version>3.2.0</version>
+        </plugin>
+        <plugin>
           <groupId>org.jetbrains.kotlin</groupId>
           <artifactId>kotlin-maven-plugin</artifactId>
           <version>${version.kotlin}</version>
@@ -443,6 +477,30 @@
       </plugins>
     </pluginManagement>
     <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-source-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-release-plugin</artifactId>
+        <configuration>
+          <autoVersionSubmodules>true</autoVersionSubmodules>
+          <pushChanges>true</pushChanges>
+          <tagNameFormat>@{project.version}</tagNameFormat>
+          <scmCommentPrefix>[TBD Release Manager &#x1f680;]</scmCommentPrefix>
+          <scmReleaseCommitComment>@{prefix} Setting version to: @{releaseLabel}</scmReleaseCommitComment>
+          <scmDevelopmentCommitComment>@{prefix} Setting next development version after: @{releaseLabel}</scmDevelopmentCommitComment>
+          <useReleaseProfile>true</useReleaseProfile>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-deploy-plugin</artifactId>
+        <configuration>
+          <deployAtEnd>true</deployAtEnd>
+        </configuration>
+      </plugin>
       <plugin>
         <groupId>io.github.martinvisser</groupId>
         <artifactId>kover-maven-plugin</artifactId>
@@ -490,6 +548,35 @@
           </dependency>
         </dependencies>
       </plugin>
+      <!--
+      This is needed because the maven-release-plugin does not check out
+      submodules, needed for Web5 Test Vectors
+
+      Idea from: https://sumit-jha.medium.com/how-to-make-maven-release-plugin-work-with-git-submodules-917825a253f2
+      -->
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <inherited>false</inherited>
+        <executions>
+          <execution>
+            <id>clone git submodule</id>
+            <phase>initialize</phase>
+            <configuration>
+              <executable>git</executable>
+              <arguments>
+                <argument>submodule</argument>
+                <argument>update</argument>
+                <argument>--init</argument>
+                <argument>--recursive</argument>
+              </arguments>
+            </configuration>
+            <goals>
+              <goal>exec</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
       <plugin>
         <groupId>org.jetbrains.kotlin</groupId>
         <artifactId>kotlin-maven-plugin</artifactId>
@@ -503,37 +590,30 @@
 
   <profiles>
     <profile>
-      <id>release-sign-artifacts</id>
-      <activation>
-        <property>
-          <name>performRelease</name>
-          <value>true</value>
-        </property>
-      </activation>
+      <id>sign-artifacts</id>
       <build>
         <plugins>
           <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-gpg-plugin</artifactId>
-            <executions>
-              <execution>
-                <id>sign-artifacts</id>
-                <phase>verify</phase>
-                <goals>
-                  <goal>sign</goal>
-                </goals>
-              </execution>
-            </executions>
-            <configuration>
-              <!-- As advised by https://gist.github.com/sualeh/ae78dc16123899d7942bc38baba5203c -->
-              <gpgArguments>
-                <arg>--pinentry-mode</arg>
-                <arg>loopback</arg>
-              </gpgArguments>
-            </configuration>
+            <groupId>org.simplify4u.plugins</groupId>
+            <artifactId>sign-maven-plugin</artifactId>
           </plugin>
         </plugins>
       </build>
+    </profile>
+    <profile>
+      <!-- https://central.sonatype.org/publish/publish-maven/#deployment -->
+      <id>ossrh</id>
+      <distributionManagement>
+        <snapshotRepository>
+          <id>ossrh-snapshots</id>
+          <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+        <!-- Sonatype's OSSRH - replicates to Maven Central within 30min of publish -->
+        <repository>
+          <id>ossrh-releases</id>
+          <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+      </distributionManagement>
     </profile>
   </profiles>
 

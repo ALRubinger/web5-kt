@@ -1,0 +1,51 @@
+# Final step of the release process. Handles:
+# * Building from tag and publishing to Maven Central
+# * Creating a new "release" in GitHub
+#
+# This workflow is intended to be triggered either as an event from Artifactory after scanning
+# or manually via GitHub UI where you may select a branch, tag, or ref to deploy
+name: Publish to Maven Central
+on:
+  workflow_dispatch:
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
+
+      # https://cashapp.github.io/hermit/usage/ci/
+      - name: Init Hermit
+        uses: cashapp/activate-hermit@v1
+
+      - uses: actions/cache@v3
+        with:
+          path: ~/.m2/repository
+          key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+          restore-keys: |
+            ${{ runner.os }}-maven-
+            
+      - name: Build, Test, and Deploy to Maven Central
+        run: |
+          # Maven deploy lifecycle will build, run tests, verify, sign, and deploy
+          mvn \
+            deploy \
+              -P ossrh,sign-artifacts \
+              --batch-mode \
+              --settings .maven_settings.xml
+        env:
+          SONATYPE_USERNAME: ${{ secrets.SONATYPE_USERNAME }}
+          SONATYPE_PASSWORD: ${{ secrets.SONATYPE_PASSWORD }}
+          SIGN_KEY_PASS: ${{ secrets.GPG_SECRET_PASSPHRASE }}
+          SIGN_KEY: ${{ secrets.GPG_SECRET_KEY }}
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v1
+        # skips snapshot releases
+        if: contains(github.event.inputs.version, 'SNAPSHOT') == false
+        with:
+          tag_name: v${{ github.event.inputs.version }}
+          draft: false
+          prerelease: true
+          generate_release_notes: true

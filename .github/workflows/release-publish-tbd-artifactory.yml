@@ -1,0 +1,74 @@
+# Kicks off the release process:
+#
+# * Sets release version
+# * Builds
+# * Tests
+# * Creates artifacts for binaries and sources
+# * Signs artifacts
+# * Uploads artifacts to TBD Artifactory
+# * Tags git with release number
+# * Pushes changes to git
+
+name: Release and Publish to TBD Artifactory
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version to release. For example "1.0.0" or "1.0.0-alpha-1". Must be a valid version, not ending in "-SNAPSHOT".'
+        required: true
+        default: '0.0.0'
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
+
+      # https://cashapp.github.io/hermit/usage/ci/
+      - name: Init Hermit
+        uses: cashapp/activate-hermit@v1
+
+      - uses: actions/cache@v3
+        with:
+          path: ~/.m2/repository
+          key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+          restore-keys: |
+            ${{ runner.os }}-maven-
+
+      # Used in writing commits in the release process
+      - name: Set Git Config
+        run: |
+          git config user.name "tbd-releases"
+          git config user.email "releases@tbd.email"
+
+      # This will set versions, git tag, sign, and publish to TBD Artifactory. Does not release to Maven Central.
+      - name: Release and Publish to TBD Artifactory
+        run: |
+          # semver helps us autoincrement the next development version
+          npm install -g semver
+          
+          # Resolve versions from GH Actions inputs into bash variables
+          resolvedVersion=${{ github.event.inputs.version }}
+          resolvedNextVersion=$(semver -i patch $resolvedVersion)-SNAPSHOT # Increment the patch number by 1 and set to next SNAPSHOT
+          
+          # Precondition check; only allow this to proceed if we have a version ending in "-SNAPSHOT"
+          if [[ $resolvedVersion =~ -SNAPSHOT$ ]]; then
+            echo "Error: The version must not end with \"-SNAPSHOT\": $resolvedVersion"
+            exit 1
+          fi
+          
+          mvn -e \
+            release:prepare \
+            release:perform \
+            --batch-mode \
+            --settings .maven_settings.xml \
+            -DreleaseVersion=$resolvedVersion \
+            -DdevelopmentVersion=$resolvedNextVersion \
+            -P sign-artifacts
+        env:
+          ARTIFACTORY_USERNAME: ${{ secrets.ARTIFACTORY_USERNAME }}
+          ARTIFACTORY_PASSWORD: ${{ secrets.ARTIFACTORY_PASSWORD }}
+          TBD_RELEASE_GITHUB_PERSONAL_ACCESS_TOKEN: ${{ secrets.TBD_RELEASE_GITHUB_PERSONAL_ACCESS_TOKEN }}
+          SIGN_KEY_PASS: ${{ secrets.GPG_SECRET_PASSPHRASE }}
+          SIGN_KEY: ${{ secrets.GPG_SECRET_KEY }}
