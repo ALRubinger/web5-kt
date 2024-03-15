@@ -13,10 +13,9 @@ name: Release and Publish to TBD Artifactory
 on:
   workflow_dispatch:
     inputs:
-      version:
-        description: 'Version to release. For example "1.0.0" or "1.0.0-alpha-1". Must be a valid version, not ending in "-SNAPSHOT".'
-        required: true
-        default: '0.0.0'
+      override_version:
+        description: '(Optional) Override Version to release. For example "1.0.0" or "1.0.0-alpha-1". Must be a valid version, not ending in "-SNAPSHOT".'
+        required: false
 jobs:
   publish:
     runs-on: ubuntu-latest
@@ -47,17 +46,26 @@ jobs:
         run: |
           # semver helps us autoincrement the next development version
           npm install -g semver
-          
-          # Resolve versions from GH Actions inputs into bash variables
-          resolvedVersion=${{ github.event.inputs.version }}
-          resolvedNextVersion=$(semver -i patch $resolvedVersion)-SNAPSHOT # Increment the patch number by 1 and set to next SNAPSHOT
-          
+
+          # Resolve versions from the Maven POM file
+          currentPomVersion=$(grep -oPm1 "(?<=<version>)[^<]+" pom.xml) 
+          if [[ -z $currentPomVersion ]]; then
+            echo "Error: Could not find a version in the pom.xml"
+            exit 1
+          fi
+
+          # If the user has provided a version, use that. Otherwise, use the version in the pom.xml
+          resolvedVersion=${{ github.event.inputs.override_version }} || $currentPomVersion
+
+          # Increment the patch number by 1 and set to next SNAPSHOT
+          resolvedNextVersion=$(semver -i patch $resolvedVersion)-SNAPSHOT 
+
           # Precondition check; only allow this to proceed if we have a version ending in "-SNAPSHOT"
           if [[ $resolvedVersion =~ -SNAPSHOT$ ]]; then
             echo "Error: The version must not end with \"-SNAPSHOT\": $resolvedVersion"
             exit 1
           fi
-          
+
           mvn -e \
             release:prepare \
             release:perform \

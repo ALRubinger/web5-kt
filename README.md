@@ -6,24 +6,25 @@
 
 This repo contains 4 jvm packages:
 
-* [common](./common) - utilities for encoding, decoding, and hashing
-* [crypto](./crypto) - key generation, signing, signature verification, encryption, and decryption
-* [dids](./dids) - did generation and resolution
-* [credentials](./credentials) - creation and verification of verifiable claims
+- [common](./common) - utilities for encoding, decoding, and hashing
+- [crypto](./crypto) - key generation, signing, signature verification, encryption, and decryption
+- [dids](./dids) - did generation and resolution
+- [credentials](./credentials) - creation and verification of verifiable claims
 
 # Quickstart
 
-Web5 is available 
-[from Maven Central](https://central.sonatype.com/artifact/xyz.block/web5). Instructions for 
+Web5 is available
+[from Maven Central](https://central.sonatype.com/artifact/xyz.block/web5). Instructions for
 adding the dependency in a variety of build tools including Maven and Gradle are linked there.
 
 > [!IMPORTANT]
-> Web5 contains transitive dependencies not 
-> found in Maven Central. To resolve these, add the 
-> [TBD thirdparty repository](https://blockxyz.jfrog.io/artifactory/tbd-oss-thirdparty-maven2/) 
+> Web5 contains transitive dependencies not
+> found in Maven Central. To resolve these, add the
+> [TBD thirdparty repository](https://blockxyz.jfrog.io/artifactory/tbd-oss-thirdparty-maven2/)
 > to your Maven or Gradle config.
-> 
+>
 > For instance, in your Maven `pom.xml`:
+>
 > ```shell
 > <repositories>
 >   <repository>
@@ -41,6 +42,7 @@ adding the dependency in a variety of build tools including Maven and Gradle are
 > ```
 >
 > ...or in your `gradle.settings.kts`:
+>
 > ```shell
 > dependencyResolutionManagement {
 >   repositories {
@@ -85,23 +87,23 @@ This project uses hermit to manage tooling like Maven and Java versions.
 See [this page](https://cashapp.github.io/hermit/usage/get-started/) to set up Hermit on your machine - make sure to
 download the open source build and activate it for the project.
 
-Once you've installed Hermit and before running builds on this repo, 
+Once you've installed Hermit and before running builds on this repo,
 run from the root:
 
 ```shell
 source ./bin/activate-hermit
 ```
 
-This will set your environment up correctly in the 
+This will set your environment up correctly in the
 terminal emulator you're on.
 
 ## Building with Maven
 
-This project is built with the 
-[Maven Project Management](https://maven.apache.org/) tool. 
+This project is built with the
+[Maven Project Management](https://maven.apache.org/) tool.
 It is installed via Hermit above.
 
-If you want to build an artifact on your local filesystem, you can do so by running the 
+If you want to build an artifact on your local filesystem, you can do so by running the
 following command - either at the top level or in
 any of the subprojects:
 
@@ -109,7 +111,7 @@ any of the subprojects:
 mvn clean verify
 ```
 
-This will first clean all previous builds and compiled code, then: 
+This will first clean all previous builds and compiled code, then:
 compile, test, and build the artifacts in each of the submodules
 of this project in the `$moduleName/target` directory, for example:
 
@@ -138,7 +140,7 @@ If you'd like to skip packaging and test only, run:
 mvn test
 ```
 
-You may also run a single test; `cd` into the submodule of choice, 
+You may also run a single test; `cd` into the submodule of choice,
 then use the `-Dtest=` parameter to denote which test to run, for example:
 
 ```shell
@@ -151,13 +153,15 @@ To install builds into your local Maven repository, run from the root:
 ```shell
 mvn install
 ```
+
 For more, see the documentation on [Maven Lifecycle](https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html).
 
 ## Generating API Docs Locally
-We use [Dokka](https://kotlinlang.org/docs/dokka-cli.html) to create the 
+
+We use [Dokka](https://kotlinlang.org/docs/dokka-cli.html) to create the
 HTML API Documentation for this project. This is done using the Dokka CLI
-because the [Dokka Maven Plugin](https://kotlinlang.org/docs/dokka-maven.html) 
-does not yet support multimodule builds. To run locally, obtain the Dokka CLI. 
+because the [Dokka Maven Plugin](https://kotlinlang.org/docs/dokka-maven.html)
+does not yet support multimodule builds. To run locally, obtain the Dokka CLI.
 Run from the root of this repo:
 
 ```shell
@@ -168,7 +172,7 @@ wget -O kotlinx-html-jvm.jar https://repo1.maven.org/maven2/org/jetbrains/kotlin
 wget -O freemarker.jar https://repo1.maven.org/maven2/org/freemarker/freemarker/2.3.31/freemarker-2.3.31.jar
 ```
 
-This will give you the Dokka CLI and all its dependencies. Dokka configuration is 
+This will give you the Dokka CLI and all its dependencies. Dokka configuration is
 located at `./dokka-configuration.json`. To generate the HTML docs, run:
 
 ```shell
@@ -190,9 +194,9 @@ following each automatically generated release.
 As Web5 is a platform intended to run in a single `ClassLoader`,
 versions and dependencies must be aligned among the subprojects
 (sometimes called modules) of this project. To address, we declare
-versions in `pom.xml`'s `<dependencyManagement>` section and 
-import references defined there in the subproject `pom.xml`s' `<dependencies>` 
-sections. Versions themselves are defined as properties in the root `pom.xml`. 
+versions in `pom.xml`'s `<dependencyManagement>` section and
+import references defined there in the subproject `pom.xml`s' `<dependencies>`
+sections. Versions themselves are defined as properties in the root `pom.xml`.
 See further documentation on versioning and dependency management there.
 
 The root `pom.xml` may also be imported in projects building atop
@@ -204,9 +208,9 @@ Web5 in `import` scope to respect these dependency declaarations.
 
 In Kotlin we use the SNAPSHOT convention to build and publish a pre-release package that can be consumed for preview/tests purposes.
 
-To kick that off:
+These SNAPSHOTs are always generated and published whenever there's a new push to main. If you want to manually kick that off to preview some changes introduced in a PR branch:
 
-1. Open the [Publish workflow](https://github.com/TBD54566975/web5-kt/actions/workflows/publish.yml), press the **Run workflow button** selecting the branch you want to generate the snapshot from.
+1. Open the [Build, Test, and Publish to TBD Artifactory Workflow](https://github.com/TBD54566975/web5-kt/actions/workflows/build-test-publish-tbd-artifactory.yml), press the **Run workflow button** selecting the branch you want to generate the snapshot from.
 
 2. In the version field, insert the current version, a short meaningful identifier and the `-SNAPSHOT` suffix, ie:
 
@@ -216,17 +220,23 @@ To kick that off:
 
 3. Run workflow!
 
-**DON'T FORGET THE `-SNAPSHOT` SUFFIX**, otherwise it will generate publish a new official release to Maven Central.
+You **MUST** use the `-SNAPSHOT` suffix, otherwise it's not a valid preview Snapshot and it will be rejected.
 
 ### Releasing New Versions
 
 To release a new version, just execute the following steps:
 
-1. Open the [Publish workflow](https://github.com/TBD54566975/tbdex-kt/actions/workflows/publish.yaml), press the **Run workflow button** and leave the main branch selected (unless its a rare case where you don't want to build the main branch for the release).
+1. Confirm that the version that you want to release is in the `<version>` tag of the [`pom.xml`](./pom.xml) file. The release will be cut with the specified version without the `-SNAPSHOT` suffix. Ie: `<version>0.13.0-SNAPSHOT</version>` will generate the `0.13.0` release.
 
-2. In the version field, insert the new version to be released, ie: 0.12.3-beta
+   - **Generally this is already `patch` bumped from the latest release. If you want to cut a different version for any other reason, just merge a PR with the desired release version.**
 
-3. Run workflow! The package will be built and **published to maven central**, **docs will be published** (see below) and **the GitHub release will be automatically generated**!
+2. Open the [Release and Publish to TBD workflow](https://github.com/TBD54566975/tbdex-kt/actions/workflows/release-publish-tbd-artifactory.yaml), press the **Run workflow button** and leave the main branch selected (unless its a rare case where you don't want to build the main branch for the release).
+
+3. (OPTIONAL) If you really have a reason to override the current set version in the Maven POM file insert a value in the version override field, ie: 0.12.4
+
+   - **The preferred way to do that should be to merge a PR justifying the version bumps changes**
+
+4. Run workflow! The package will be built and **published to maven central**, **docs will be published** (see below) and **the GitHub release will be automatically generated**!
 
 ### Publishing to TBD Artifactory from a Local Dev Machine
 
@@ -248,7 +258,7 @@ mvn deploy --settings .maven_settings.xml
 Please take care to only publish `-SNAPSHOT` builds (ie.
 when the `<version>` field of the `pom.xml` ends in
 `-SNAPSHOT`.) unless there's good reason
-to deploy a non-`SNAPSHOT` release. Releases are typically handled via automation 
+to deploy a non-`SNAPSHOT` release. Releases are typically handled via automation
 in GitHub Actions s documented above.
 
 ## Working with the `web5-spec` submodule
@@ -276,6 +286,6 @@ git push
 
 # Other Docs
 
-* [Guidelines](./CONVENTIONS.md)
-* [Code of Conduct](./CODE_OF_CONDUCT.md)
-* [Governance](./GOVERNANCE.md)
+- [Guidelines](./CONVENTIONS.md)
+- [Code of Conduct](./CODE_OF_CONDUCT.md)
+- [Governance](./GOVERNANCE.md)
