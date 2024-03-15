@@ -54,8 +54,12 @@ jobs:
             exit 1
           fi
 
+          # strip the -SNAPSHOT suffix
+          currentPomVersion=${currentPomVersion%-SNAPSHOT}
+          echo "Current version to be released set in the POM file: $currentPomVersion"
+
           # If the user has provided a version, use that. Otherwise, use the version in the pom.xml
-          resolvedVersion=${{ github.event.inputs.override_version }} || $currentPomVersion
+          resolvedVersion=${"${{ github.event.inputs.override_version }}":-$currentPomVersion}
 
           # Increment the patch number by 1 and set to next SNAPSHOT
           resolvedNextVersion=$(semver -i patch $resolvedVersion)-SNAPSHOT 
@@ -65,6 +69,8 @@ jobs:
             echo "Error: The version must not end with \"-SNAPSHOT\": $resolvedVersion"
             exit 1
           fi
+
+          echo "Final Resolved version to be released: $resolvedVersion"
 
           mvn -e \
             release:prepare \
