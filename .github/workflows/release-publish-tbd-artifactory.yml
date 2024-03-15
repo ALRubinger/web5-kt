@@ -13,7 +13,7 @@ name: Release and Publish to TBD Artifactory
 on:
   workflow_dispatch:
     inputs:
-      override_version:
+      overrideVersion:
         description: '(Optional) Override Version to release. For example "1.0.0" or "1.0.0-alpha-1". Must be a valid version, not ending in "-SNAPSHOT".'
         required: false
 jobs:
@@ -59,7 +59,7 @@ jobs:
           echo "Current version to be released set in the POM file: $currentPomVersion"
 
           # If the user has provided a version, use that. Otherwise, use the version in the pom.xml
-          overrideVersion=${{ github.event.inputs.override_version }}
+          overrideVersion=${{ github.event.inputs.overrideVersion }}
           resolvedVersion=${overrideVersion:-$currentPomVersion}
 
           # Increment the patch number by 1 and set to next SNAPSHOT
