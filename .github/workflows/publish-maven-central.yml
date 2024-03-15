@@ -7,6 +7,21 @@
 name: Publish to Maven Central
 on:
   workflow_dispatch:
+    inputs:
+      versionType:
+        description: "Version Type - Major, Minor, Patch, Manual"
+        required: true
+        default: patch
+        type: choice
+        options:
+          - major
+          - minor
+          - patch
+          - manual
+      customVersion:
+        description: "Custom Version - Use if Version Type is Manual"
+        required: false
+
 jobs:
   publish:
     runs-on: ubuntu-latest
@@ -25,7 +40,7 @@ jobs:
           key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
           restore-keys: |
             ${{ runner.os }}-maven-
-            
+
       - name: Build, Test, and Deploy to Maven Central
         run: |
           # Maven deploy lifecycle will build, run tests, verify, sign, and deploy
@@ -40,12 +55,34 @@ jobs:
           SIGN_KEY_PASS: ${{ secrets.GPG_SECRET_PASSPHRASE }}
           SIGN_KEY: ${{ secrets.GPG_SECRET_KEY }}
 
-      - name: Create GitHub Release
-        uses: softprops/action-gh-release@v1
-        # skips snapshot releases
-        if: contains(github.event.inputs.version, 'SNAPSHOT') == false
-        with:
-          tag_name: v${{ github.event.inputs.version }}
-          draft: false
-          prerelease: true
-          generate_release_notes: true
+      - name: Bump tag version
+        id: bump_version
+        run: |
+          VERSION_TYPE=${{ github.event.inputs.versionType }}
+          CUSTOM_VERSION=${{ github.event.inputs.customVersion }}
+          if [[ "$VERSION_TYPE" == "manual" && -n "$CUSTOM_VERSION" ]]; then
+            NEW_TAG=$CUSTOM_VERSION
+          elif [[ "$VERSION_TYPE" == "major" || "$VERSION_TYPE" == "minor" ||  "$VERSION_TYPE" == "patch" ]]; then
+            npm install -g semver
+            LAST_TAG=$(git describe --match "[0-9]*.[0-9]*.[0-9]*" --tags --abbrev=0)
+            NEW_TAG=$(semver -i $VERSION_TYPE $LAST_TAG)
+          else
+            echo "Invalid version type"
+            exit 1
+          fi
+          echo "New version: $NEW_TAG"
+          echo "new_tag=$NEW_TAG" >> $GITHUB_OUTPUT
+
+      - name: Test bumped version
+        run: |
+          echo ${{ steps.bump_version.outputs.new_tag }}
+
+      # - name: Create GitHub Release
+      #   uses: softprops/action-gh-release@v1
+      #   # skips snapshot releases
+      #   if: contains(github.event.inputs.version, 'SNAPSHOT') == false
+      #   with:
+      #     tag_name: v${{ github.event.inputs.version }}
+      #     draft: false
+      #     prerelease: true
+      #     generate_release_notes: true
