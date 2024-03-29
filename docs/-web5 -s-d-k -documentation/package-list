@@ -21,7 +21,10 @@ $dokka.location:web5.sdk.common/EncodingFormat/valueOf/#kotlin.String/PointingTo
 $dokka.location:web5.sdk.common/EncodingFormat/values/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.common/-encoding-format/values.html
 $dokka.location:web5.sdk.common/Json///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.common/-json/index.html
 $dokka.location:web5.sdk.common/Json/jsonMapper/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.common/-json/json-mapper.html
+$dokka.location:web5.sdk.common/Json/objectReader/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.common/-json/object-reader.html
+$dokka.location:web5.sdk.common/Json/parse/#kotlin.String/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.common/-json/parse.html
 $dokka.location:web5.sdk.common/Json/stringify/#kotlin.Any/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.common/-json/stringify.html
+$dokka.location:web5.sdk.common/Json/toMap/kotlin.String#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.common/-json/to-map.html
 $dokka.location:web5.sdk.common/Varint///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.common/-varint/index.html
 $dokka.location:web5.sdk.common/Varint/decode/#kotlin.ByteArray/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.common/-varint/decode.html
 $dokka.location:web5.sdk.common/Varint/encode/#kotlin.Int/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.common/-varint/encode.html
@@ -110,10 +113,6 @@ $dokka.location:web5.sdk.credentials.model/SubmissionRequirement/min/#/PointingT
 $dokka.location:web5.sdk.credentials.model/SubmissionRequirement/name/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.credentials.model/-submission-requirement/name.html
 $dokka.location:web5.sdk.credentials.model/SubmissionRequirement/purpose/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.credentials.model/-submission-requirement/purpose.html
 $dokka.location:web5.sdk.credentials.model/SubmissionRequirement/rule/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.credentials.model/-submission-requirement/rule.html
-$dokka.location:web5.sdk.credentials.util////PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.credentials.util/index.html
-$dokka.location:web5.sdk.credentials.util/JwtUtil///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.credentials.util/-jwt-util/index.html
-$dokka.location:web5.sdk.credentials.util/JwtUtil/sign/#web5.sdk.dids.Did#kotlin.String?#[Error type: Unresolved type for JWTClaimsSet]/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.credentials.util/-jwt-util/sign.html
-$dokka.location:web5.sdk.credentials.util/JwtUtil/verify/#kotlin.String/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.credentials.util/-jwt-util/verify.html
 $dokka.location:web5.sdk.credentials////PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.credentials/index.html
 $dokka.location:web5.sdk.credentials/BitstringExpansionException///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.credentials/-bitstring-expansion-exception/index.html
 $dokka.location:web5.sdk.credentials/BitstringExpansionException/BitstringExpansionException/#kotlin.Throwable#kotlin.String?/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.credentials/-bitstring-expansion-exception/-bitstring-expansion-exception.html
@@ -145,14 +144,15 @@ $dokka.location:web5.sdk.credentials/StatusPurpose/valueOf/#kotlin.String/Pointi
 $dokka.location:web5.sdk.credentials/StatusPurpose/values/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.credentials/-status-purpose/values.html
 $dokka.location:web5.sdk.credentials/VcDataModel///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.credentials/-vc-data-model/index.html
 $dokka.location:web5.sdk.credentials/VerifiableCredential.Companion///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.credentials/-verifiable-credential/-companion/index.html
-$dokka.location:web5.sdk.credentials/VerifiableCredential.Companion/create/#kotlin.String#kotlin.String#kotlin.String#TypeParam(bounds=[kotlin.Any?])#[Error type: Unresolved type for CredentialStatus]?#java.util.Date#java.util.Date?/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.credentials/-verifiable-credential/-companion/create.html
+$dokka.location:web5.sdk.credentials/VerifiableCredential.Companion/create/#kotlin.String#kotlin.String#kotlin.String#TypeParam(bounds=[kotlin.Any?])#[Error type: Unresolved type for CredentialStatus]?#java.util.Date#java.util.Date?#kotlin.collections.List[kotlin.Any]?/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.credentials/-verifiable-credential/-companion/create.html
 $dokka.location:web5.sdk.credentials/VerifiableCredential.Companion/fromJson/#kotlin.String/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.credentials/-verifiable-credential/-companion/from-json.html
 $dokka.location:web5.sdk.credentials/VerifiableCredential.Companion/parseJwt/#kotlin.String/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.credentials/-verifiable-credential/-companion/parse-jwt.html
 $dokka.location:web5.sdk.credentials/VerifiableCredential.Companion/verify/#kotlin.String/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.credentials/-verifiable-credential/-companion/verify.html
 $dokka.location:web5.sdk.credentials/VerifiableCredential///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.credentials/-verifiable-credential/index.html
+$dokka.location:web5.sdk.credentials/VerifiableCredential/evidence/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.credentials/-verifiable-credential/evidence.html
 $dokka.location:web5.sdk.credentials/VerifiableCredential/getFieldByJsonPath/#kotlin.String/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.credentials/-verifiable-credential/get-field-by-json-path.html
 $dokka.location:web5.sdk.credentials/VerifiableCredential/issuer/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.credentials/-verifiable-credential/issuer.html
-$dokka.location:web5.sdk.credentials/VerifiableCredential/sign/#web5.sdk.dids.Did#kotlin.String?/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.credentials/-verifiable-credential/sign.html
+$dokka.location:web5.sdk.credentials/VerifiableCredential/sign/#web5.sdk.dids.did.BearerDid#kotlin.String?/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.credentials/-verifiable-credential/sign.html
 $dokka.location:web5.sdk.credentials/VerifiableCredential/subject/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.credentials/-verifiable-credential/subject.html
 $dokka.location:web5.sdk.credentials/VerifiableCredential/toString/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.credentials/-verifiable-credential/to-string.html
 $dokka.location:web5.sdk.credentials/VerifiableCredential/type/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.credentials/-verifiable-credential/type.html
@@ -163,11 +163,33 @@ $dokka.location:web5.sdk.credentials/VerifiablePresentation.Companion/parseJwt/#
 $dokka.location:web5.sdk.credentials/VerifiablePresentation.Companion/verify/#kotlin.String/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.credentials/-verifiable-presentation/-companion/verify.html
 $dokka.location:web5.sdk.credentials/VerifiablePresentation///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.credentials/-verifiable-presentation/index.html
 $dokka.location:web5.sdk.credentials/VerifiablePresentation/holder/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.credentials/-verifiable-presentation/holder.html
-$dokka.location:web5.sdk.credentials/VerifiablePresentation/sign/#web5.sdk.dids.Did#kotlin.String?/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.credentials/-verifiable-presentation/sign.html
+$dokka.location:web5.sdk.credentials/VerifiablePresentation/sign/#web5.sdk.dids.did.BearerDid#kotlin.String?/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.credentials/-verifiable-presentation/sign.html
 $dokka.location:web5.sdk.credentials/VerifiablePresentation/toString/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.credentials/-verifiable-presentation/to-string.html
 $dokka.location:web5.sdk.credentials/VerifiablePresentation/verifiableCredential/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.credentials/-verifiable-presentation/verifiable-credential.html
 $dokka.location:web5.sdk.credentials/VerifiablePresentation/vpDataModel/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.credentials/-verifiable-presentation/vp-data-model.html
 $dokka.location:web5.sdk.credentials/VpDataModel///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.credentials/-vp-data-model/index.html
+$dokka.location:web5.sdk.crypto.jwk////PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto.jwk/index.html
+$dokka.location:web5.sdk.crypto.jwk/Jwk.Builder///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto.jwk/-jwk/-builder/index.html
+$dokka.location:web5.sdk.crypto.jwk/Jwk.Builder/Builder/#kotlin.String#kotlin.String/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto.jwk/-jwk/-builder/-builder.html
+$dokka.location:web5.sdk.crypto.jwk/Jwk.Builder/algorithm/#kotlin.String/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto.jwk/-jwk/-builder/algorithm.html
+$dokka.location:web5.sdk.crypto.jwk/Jwk.Builder/build/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto.jwk/-jwk/-builder/build.html
+$dokka.location:web5.sdk.crypto.jwk/Jwk.Builder/keyId/#kotlin.String/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto.jwk/-jwk/-builder/key-id.html
+$dokka.location:web5.sdk.crypto.jwk/Jwk.Builder/keyUse/#kotlin.String/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto.jwk/-jwk/-builder/key-use.html
+$dokka.location:web5.sdk.crypto.jwk/Jwk.Builder/privateKey/#kotlin.String/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto.jwk/-jwk/-builder/private-key.html
+$dokka.location:web5.sdk.crypto.jwk/Jwk.Builder/x/#kotlin.String/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto.jwk/-jwk/-builder/x.html
+$dokka.location:web5.sdk.crypto.jwk/Jwk.Builder/y/#kotlin.String/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto.jwk/-jwk/-builder/y.html
+$dokka.location:web5.sdk.crypto.jwk/Jwk///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto.jwk/-jwk/index.html
+$dokka.location:web5.sdk.crypto.jwk/Jwk/Jwk/#kotlin.String#kotlin.String#kotlin.String?#kotlin.String?#kotlin.String?#kotlin.String?#kotlin.String?#kotlin.String?/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto.jwk/-jwk/-jwk.html
+$dokka.location:web5.sdk.crypto.jwk/Jwk/alg/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto.jwk/-jwk/alg.html
+$dokka.location:web5.sdk.crypto.jwk/Jwk/computeThumbprint/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto.jwk/-jwk/compute-thumbprint.html
+$dokka.location:web5.sdk.crypto.jwk/Jwk/crv/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto.jwk/-jwk/crv.html
+$dokka.location:web5.sdk.crypto.jwk/Jwk/d/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto.jwk/-jwk/d.html
+$dokka.location:web5.sdk.crypto.jwk/Jwk/kid/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto.jwk/-jwk/kid.html
+$dokka.location:web5.sdk.crypto.jwk/Jwk/kty/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto.jwk/-jwk/kty.html
+$dokka.location:web5.sdk.crypto.jwk/Jwk/toString/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto.jwk/-jwk/to-string.html
+$dokka.location:web5.sdk.crypto.jwk/Jwk/use/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto.jwk/-jwk/use.html
+$dokka.location:web5.sdk.crypto.jwk/Jwk/x/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto.jwk/-jwk/x.html
+$dokka.location:web5.sdk.crypto.jwk/Jwk/y/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto.jwk/-jwk/y.html
 $dokka.location:web5.sdk.crypto////PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/index.html
 $dokka.location:web5.sdk.crypto/AlgorithmId.Companion///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-algorithm-id/-companion/index.html
 $dokka.location:web5.sdk.crypto/AlgorithmId.Companion/from/#web5.sdk.crypto.JwaCurve?/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-algorithm-id/-companion/from.html
@@ -181,45 +203,44 @@ $dokka.location:web5.sdk.crypto/AlgorithmId/values/#/PointingToDeclaration/-web
 $dokka.location:web5.sdk.crypto/AwsKeyManager///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-aws-key-manager/index.html
 $dokka.location:web5.sdk.crypto/AwsKeyManager/AwsKeyManager/#[Error type: Unresolved type for AWSKMS]/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-aws-key-manager/-aws-key-manager.html
 $dokka.location:web5.sdk.crypto/AwsKeyManager/generatePrivateKey/#web5.sdk.crypto.AlgorithmId#web5.sdk.crypto.KeyGenOptions?/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-aws-key-manager/generate-private-key.html
-$dokka.location:web5.sdk.crypto/AwsKeyManager/getDeterministicAlias/#[Error type: Unresolved type for JWK]/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-aws-key-manager/get-deterministic-alias.html
+$dokka.location:web5.sdk.crypto/AwsKeyManager/getDeterministicAlias/#web5.sdk.crypto.jwk.Jwk/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-aws-key-manager/get-deterministic-alias.html
 $dokka.location:web5.sdk.crypto/AwsKeyManager/getPublicKey/#kotlin.String/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-aws-key-manager/get-public-key.html
 $dokka.location:web5.sdk.crypto/AwsKeyManager/sign/#kotlin.String#kotlin.ByteArray/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-aws-key-manager/sign.html
 $dokka.location:web5.sdk.crypto/Crypto///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-crypto/index.html
-$dokka.location:web5.sdk.crypto/Crypto/computePublicKey/#[Error type: Unresolved type for JWK]/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-crypto/compute-public-key.html
+$dokka.location:web5.sdk.crypto/Crypto/computePublicKey/#web5.sdk.crypto.jwk.Jwk/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-crypto/compute-public-key.html
 $dokka.location:web5.sdk.crypto/Crypto/generatePrivateKey/#web5.sdk.crypto.AlgorithmId#web5.sdk.crypto.KeyGenOptions?/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-crypto/generate-private-key.html
 $dokka.location:web5.sdk.crypto/Crypto/getAlgorithmMultiCodec/#web5.sdk.crypto.AlgorithmId/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-crypto/get-algorithm-multi-codec.html
-$dokka.location:web5.sdk.crypto/Crypto/getJwkCurve/#[Error type: Unresolved type for JWK]/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-crypto/get-jwk-curve.html
+$dokka.location:web5.sdk.crypto/Crypto/getJwkCurve/#web5.sdk.crypto.jwk.Jwk/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-crypto/get-jwk-curve.html
 $dokka.location:web5.sdk.crypto/Crypto/getKeyGenerator/#kotlin.Int/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-crypto/get-key-generator.html
 $dokka.location:web5.sdk.crypto/Crypto/getKeyGenerator/#web5.sdk.crypto.AlgorithmId/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-crypto/get-key-generator.html
 $dokka.location:web5.sdk.crypto/Crypto/getSigner/#web5.sdk.crypto.AlgorithmId/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-crypto/get-signer.html
 $dokka.location:web5.sdk.crypto/Crypto/getVerifier/#web5.sdk.crypto.JwaCurve?/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-crypto/get-verifier.html
-$dokka.location:web5.sdk.crypto/Crypto/publicKeyToBytes/#[Error type: Unresolved type for JWK]/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-crypto/public-key-to-bytes.html
-$dokka.location:web5.sdk.crypto/Crypto/sign/#[Error type: Unresolved type for JWK]#kotlin.ByteArray#web5.sdk.crypto.SignOptions?/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-crypto/sign.html
-$dokka.location:web5.sdk.crypto/Crypto/verify/#[Error type: Unresolved type for JWK]#kotlin.ByteArray#kotlin.ByteArray/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-crypto/verify.html
+$dokka.location:web5.sdk.crypto/Crypto/publicKeyToBytes/#web5.sdk.crypto.jwk.Jwk/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-crypto/public-key-to-bytes.html
+$dokka.location:web5.sdk.crypto/Crypto/sign/#web5.sdk.crypto.jwk.Jwk#kotlin.ByteArray#web5.sdk.crypto.SignOptions?/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-crypto/sign.html
+$dokka.location:web5.sdk.crypto/Crypto/verify/#web5.sdk.crypto.jwk.Jwk#kotlin.ByteArray#kotlin.ByteArray/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-crypto/verify.html
 $dokka.location:web5.sdk.crypto/Ed25519///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-ed25519/index.html
 $dokka.location:web5.sdk.crypto/Ed25519/PRIV_MULTICODEC/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-ed25519/-p-r-i-v_-m-u-l-t-i-c-o-d-e-c.html
 $dokka.location:web5.sdk.crypto/Ed25519/PUB_MULTICODEC/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-ed25519/-p-u-b_-m-u-l-t-i-c-o-d-e-c.html
 $dokka.location:web5.sdk.crypto/Ed25519/algorithm/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-ed25519/algorithm.html
 $dokka.location:web5.sdk.crypto/Ed25519/bytesToPrivateKey/#kotlin.ByteArray/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-ed25519/bytes-to-private-key.html
 $dokka.location:web5.sdk.crypto/Ed25519/bytesToPublicKey/#kotlin.ByteArray/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-ed25519/bytes-to-public-key.html
-$dokka.location:web5.sdk.crypto/Ed25519/computePublicKey/#[Error type: Unresolved type for JWK]/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-ed25519/compute-public-key.html
+$dokka.location:web5.sdk.crypto/Ed25519/computePublicKey/#web5.sdk.crypto.jwk.Jwk/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-ed25519/compute-public-key.html
 $dokka.location:web5.sdk.crypto/Ed25519/curve/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-ed25519/curve.html
 $dokka.location:web5.sdk.crypto/Ed25519/generatePrivateKey/#web5.sdk.crypto.KeyGenOptions?/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-ed25519/generate-private-key.html
 $dokka.location:web5.sdk.crypto/Ed25519/keyType/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-ed25519/key-type.html
-$dokka.location:web5.sdk.crypto/Ed25519/privateKeyToBytes/#[Error type: Unresolved type for JWK]/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-ed25519/private-key-to-bytes.html
-$dokka.location:web5.sdk.crypto/Ed25519/publicKeyToBytes/#[Error type: Unresolved type for JWK]/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-ed25519/public-key-to-bytes.html
-$dokka.location:web5.sdk.crypto/Ed25519/sign/#[Error type: Unresolved type for JWK]#kotlin.ByteArray#web5.sdk.crypto.SignOptions?/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-ed25519/sign.html
-$dokka.location:web5.sdk.crypto/Ed25519/validatePrivateKey/#[Error type: Unresolved type for JWK]/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-ed25519/validate-private-key.html
-$dokka.location:web5.sdk.crypto/Ed25519/validatePublicKey/#[Error type: Unresolved type for JWK]/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-ed25519/validate-public-key.html
-$dokka.location:web5.sdk.crypto/Ed25519/verify/#[Error type: Unresolved type for JWK]#kotlin.ByteArray#kotlin.ByteArray#web5.sdk.crypto.VerifyOptions?/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-ed25519/verify.html
+$dokka.location:web5.sdk.crypto/Ed25519/privateKeyToBytes/#web5.sdk.crypto.jwk.Jwk/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-ed25519/private-key-to-bytes.html
+$dokka.location:web5.sdk.crypto/Ed25519/publicKeyToBytes/#web5.sdk.crypto.jwk.Jwk/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-ed25519/public-key-to-bytes.html
+$dokka.location:web5.sdk.crypto/Ed25519/sign/#web5.sdk.crypto.jwk.Jwk#kotlin.ByteArray#web5.sdk.crypto.SignOptions?/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-ed25519/sign.html
+$dokka.location:web5.sdk.crypto/Ed25519/validatePrivateKey/#web5.sdk.crypto.jwk.Jwk/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-ed25519/validate-private-key.html
+$dokka.location:web5.sdk.crypto/Ed25519/validatePublicKey/#web5.sdk.crypto.jwk.Jwk/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-ed25519/validate-public-key.html
+$dokka.location:web5.sdk.crypto/Ed25519/verify/#web5.sdk.crypto.jwk.Jwk#kotlin.ByteArray#kotlin.ByteArray#web5.sdk.crypto.VerifyOptions?/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-ed25519/verify.html
 $dokka.location:web5.sdk.crypto/InMemoryKeyManager///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-in-memory-key-manager/index.html
 $dokka.location:web5.sdk.crypto/InMemoryKeyManager/InMemoryKeyManager/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-in-memory-key-manager/-in-memory-key-manager.html
-$dokka.location:web5.sdk.crypto/InMemoryKeyManager/export/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-in-memory-key-manager/export.html
+$dokka.location:web5.sdk.crypto/InMemoryKeyManager/exportKey/#kotlin.String/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-in-memory-key-manager/export-key.html
 $dokka.location:web5.sdk.crypto/InMemoryKeyManager/generatePrivateKey/#web5.sdk.crypto.AlgorithmId#web5.sdk.crypto.KeyGenOptions?/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-in-memory-key-manager/generate-private-key.html
-$dokka.location:web5.sdk.crypto/InMemoryKeyManager/getDeterministicAlias/#[Error type: Unresolved type for JWK]/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-in-memory-key-manager/get-deterministic-alias.html
+$dokka.location:web5.sdk.crypto/InMemoryKeyManager/getDeterministicAlias/#web5.sdk.crypto.jwk.Jwk/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-in-memory-key-manager/get-deterministic-alias.html
 $dokka.location:web5.sdk.crypto/InMemoryKeyManager/getPublicKey/#kotlin.String/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-in-memory-key-manager/get-public-key.html
-$dokka.location:web5.sdk.crypto/InMemoryKeyManager/import/#[Error type: Unresolved type for JWK]/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-in-memory-key-manager/import.html
-$dokka.location:web5.sdk.crypto/InMemoryKeyManager/import/#kotlin.collections.Iterable[kotlin.collections.Map[kotlin.String,kotlin.Any]]/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-in-memory-key-manager/import.html
+$dokka.location:web5.sdk.crypto/InMemoryKeyManager/importKey/#web5.sdk.crypto.jwk.Jwk/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-in-memory-key-manager/import-key.html
 $dokka.location:web5.sdk.crypto/InMemoryKeyManager/sign/#kotlin.String#kotlin.ByteArray/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-in-memory-key-manager/sign.html
 $dokka.location:web5.sdk.crypto/Jwa.Companion///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-jwa/-companion/index.html
 $dokka.location:web5.sdk.crypto/Jwa.Companion/parse/#kotlin.String?/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-jwa/-companion/parse.html
@@ -231,26 +252,30 @@ $dokka.location:web5.sdk.crypto/Jwa/valueOf/#kotlin.String/PointingToDeclaration
 $dokka.location:web5.sdk.crypto/Jwa/values/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-jwa/values.html
 $dokka.location:web5.sdk.crypto/JwaCurve.Companion///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-jwa-curve/-companion/index.html
 $dokka.location:web5.sdk.crypto/JwaCurve.Companion/parse/#kotlin.String?/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-jwa-curve/-companion/parse.html
-$dokka.location:web5.sdk.crypto/JwaCurve.Companion/toJwkCurve/#web5.sdk.crypto.JwaCurve/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-jwa-curve/-companion/to-jwk-curve.html
+$dokka.location:web5.sdk.crypto/JwaCurve.Companion/toNimbusCurve/#web5.sdk.crypto.JwaCurve/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-jwa-curve/-companion/to-nimbus-curve.html
 $dokka.location:web5.sdk.crypto/JwaCurve.Ed25519///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}-web5 -s-d-k -documentation/web5.sdk.crypto/-jwa-curve/-ed25519/index.html
 $dokka.location:web5.sdk.crypto/JwaCurve.secp256k1///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}-web5 -s-d-k -documentation/web5.sdk.crypto/-jwa-curve/secp256k1/index.html
 $dokka.location:web5.sdk.crypto/JwaCurve///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-jwa-curve/index.html
 $dokka.location:web5.sdk.crypto/JwaCurve/valueOf/#kotlin.String/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-jwa-curve/value-of.html
 $dokka.location:web5.sdk.crypto/JwaCurve/values/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-jwa-curve/values.html
+$dokka.location:web5.sdk.crypto/KeyExporter///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-key-exporter/index.html
+$dokka.location:web5.sdk.crypto/KeyExporter/exportKey/#kotlin.String/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-key-exporter/export-key.html
 $dokka.location:web5.sdk.crypto/KeyGenOptions///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-key-gen-options/index.html
 $dokka.location:web5.sdk.crypto/KeyGenerator///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-key-generator/index.html
 $dokka.location:web5.sdk.crypto/KeyGenerator/algorithm/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-key-generator/algorithm.html
 $dokka.location:web5.sdk.crypto/KeyGenerator/bytesToPrivateKey/#kotlin.ByteArray/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-key-generator/bytes-to-private-key.html
 $dokka.location:web5.sdk.crypto/KeyGenerator/bytesToPublicKey/#kotlin.ByteArray/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-key-generator/bytes-to-public-key.html
-$dokka.location:web5.sdk.crypto/KeyGenerator/computePublicKey/#[Error type: Unresolved type for JWK]/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-key-generator/compute-public-key.html
+$dokka.location:web5.sdk.crypto/KeyGenerator/computePublicKey/#web5.sdk.crypto.jwk.Jwk/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-key-generator/compute-public-key.html
 $dokka.location:web5.sdk.crypto/KeyGenerator/curve/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-key-generator/curve.html
 $dokka.location:web5.sdk.crypto/KeyGenerator/generatePrivateKey/#web5.sdk.crypto.KeyGenOptions?/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-key-generator/generate-private-key.html
 $dokka.location:web5.sdk.crypto/KeyGenerator/keyType/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-key-generator/key-type.html
-$dokka.location:web5.sdk.crypto/KeyGenerator/privateKeyToBytes/#[Error type: Unresolved type for JWK]/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-key-generator/private-key-to-bytes.html
-$dokka.location:web5.sdk.crypto/KeyGenerator/publicKeyToBytes/#[Error type: Unresolved type for JWK]/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-key-generator/public-key-to-bytes.html
+$dokka.location:web5.sdk.crypto/KeyGenerator/privateKeyToBytes/#web5.sdk.crypto.jwk.Jwk/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-key-generator/private-key-to-bytes.html
+$dokka.location:web5.sdk.crypto/KeyGenerator/publicKeyToBytes/#web5.sdk.crypto.jwk.Jwk/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-key-generator/public-key-to-bytes.html
+$dokka.location:web5.sdk.crypto/KeyImporter///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-key-importer/index.html
+$dokka.location:web5.sdk.crypto/KeyImporter/importKey/#web5.sdk.crypto.jwk.Jwk/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-key-importer/import-key.html
 $dokka.location:web5.sdk.crypto/KeyManager///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-key-manager/index.html
 $dokka.location:web5.sdk.crypto/KeyManager/generatePrivateKey/#web5.sdk.crypto.AlgorithmId#web5.sdk.crypto.KeyGenOptions?/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-key-manager/generate-private-key.html
-$dokka.location:web5.sdk.crypto/KeyManager/getDeterministicAlias/#[Error type: Unresolved type for JWK]/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-key-manager/get-deterministic-alias.html
+$dokka.location:web5.sdk.crypto/KeyManager/getDeterministicAlias/#web5.sdk.crypto.jwk.Jwk/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-key-manager/get-deterministic-alias.html
 $dokka.location:web5.sdk.crypto/KeyManager/getPublicKey/#kotlin.String/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-key-manager/get-public-key.html
 $dokka.location:web5.sdk.crypto/KeyManager/sign/#kotlin.String#kotlin.ByteArray/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-key-manager/sign.html
 $dokka.location:web5.sdk.crypto/Secp256k1///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-secp256k1/index.html
@@ -266,76 +291,94 @@ $dokka.location:web5.sdk.crypto/Secp256k1/algorithm/#/PointingToDeclaration/-we
 $dokka.location:web5.sdk.crypto/Secp256k1/bytesToPrivateKey/#kotlin.ByteArray/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-secp256k1/bytes-to-private-key.html
 $dokka.location:web5.sdk.crypto/Secp256k1/bytesToPublicKey/#kotlin.ByteArray/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-secp256k1/bytes-to-public-key.html
 $dokka.location:web5.sdk.crypto/Secp256k1/compressPublicKey/#kotlin.ByteArray/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-secp256k1/compress-public-key.html
-$dokka.location:web5.sdk.crypto/Secp256k1/computePublicKey/#[Error type: Unresolved type for JWK]/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-secp256k1/compute-public-key.html
+$dokka.location:web5.sdk.crypto/Secp256k1/computePublicKey/#web5.sdk.crypto.jwk.Jwk/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-secp256k1/compute-public-key.html
 $dokka.location:web5.sdk.crypto/Secp256k1/curve/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-secp256k1/curve.html
 $dokka.location:web5.sdk.crypto/Secp256k1/generatePrivateKey/#web5.sdk.crypto.KeyGenOptions?/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-secp256k1/generate-private-key.html
 $dokka.location:web5.sdk.crypto/Secp256k1/inflatePublicKey/#kotlin.ByteArray/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-secp256k1/inflate-public-key.html
 $dokka.location:web5.sdk.crypto/Secp256k1/keyType/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-secp256k1/key-type.html
-$dokka.location:web5.sdk.crypto/Secp256k1/privateKeyToBytes/#[Error type: Unresolved type for JWK]/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-secp256k1/private-key-to-bytes.html
-$dokka.location:web5.sdk.crypto/Secp256k1/publicKeyToBytes/#[Error type: Unresolved type for JWK]/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-secp256k1/public-key-to-bytes.html
+$dokka.location:web5.sdk.crypto/Secp256k1/privateKeyToBytes/#web5.sdk.crypto.jwk.Jwk/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-secp256k1/private-key-to-bytes.html
+$dokka.location:web5.sdk.crypto/Secp256k1/publicKeyToBytes/#web5.sdk.crypto.jwk.Jwk/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-secp256k1/public-key-to-bytes.html
 $dokka.location:web5.sdk.crypto/Secp256k1/publicKeyXRange/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-secp256k1/public-key-x-range.html
 $dokka.location:web5.sdk.crypto/Secp256k1/publicKeyYRange/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-secp256k1/public-key-y-range.html
-$dokka.location:web5.sdk.crypto/Secp256k1/sign/#[Error type: Unresolved type for JWK]#kotlin.ByteArray#web5.sdk.crypto.SignOptions?/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-secp256k1/sign.html
-$dokka.location:web5.sdk.crypto/Secp256k1/validateKey/#[Error type: Unresolved type for JWK]/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-secp256k1/validate-key.html
-$dokka.location:web5.sdk.crypto/Secp256k1/verify/#[Error type: Unresolved type for JWK]#kotlin.ByteArray#kotlin.ByteArray#web5.sdk.crypto.VerifyOptions?/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-secp256k1/verify.html
+$dokka.location:web5.sdk.crypto/Secp256k1/sign/#web5.sdk.crypto.jwk.Jwk#kotlin.ByteArray#web5.sdk.crypto.SignOptions?/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-secp256k1/sign.html
+$dokka.location:web5.sdk.crypto/Secp256k1/validateKey/#web5.sdk.crypto.jwk.Jwk/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-secp256k1/validate-key.html
+$dokka.location:web5.sdk.crypto/Secp256k1/verify/#web5.sdk.crypto.jwk.Jwk#kotlin.ByteArray#kotlin.ByteArray#web5.sdk.crypto.VerifyOptions?/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-secp256k1/verify.html
 $dokka.location:web5.sdk.crypto/SignOptions///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-sign-options/index.html
 $dokka.location:web5.sdk.crypto/Signer///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-signer/index.html
-$dokka.location:web5.sdk.crypto/Signer/sign/#[Error type: Unresolved type for JWK]#kotlin.ByteArray#web5.sdk.crypto.SignOptions?/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-signer/sign.html
-$dokka.location:web5.sdk.crypto/Signer/verify/#[Error type: Unresolved type for JWK]#kotlin.ByteArray#kotlin.ByteArray#web5.sdk.crypto.VerifyOptions?/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-signer/verify.html
+$dokka.location:web5.sdk.crypto/Signer/sign/#web5.sdk.crypto.jwk.Jwk#kotlin.ByteArray#web5.sdk.crypto.SignOptions?/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-signer/sign.html
+$dokka.location:web5.sdk.crypto/Signer/verify/#web5.sdk.crypto.jwk.Jwk#kotlin.ByteArray#kotlin.ByteArray#web5.sdk.crypto.VerifyOptions?/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-signer/verify.html
 $dokka.location:web5.sdk.crypto/VerifyOptions///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.crypto/-verify-options/index.html
+$dokka.location:web5.sdk.dids.did////PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.did/index.html
+$dokka.location:web5.sdk.dids.did/BearerDid.Companion///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.did/-bearer-did/-companion/index.html
+$dokka.location:web5.sdk.dids.did/BearerDid.Companion/import/#web5.sdk.dids.did.PortableDid#web5.sdk.crypto.KeyManager/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.did/-bearer-did/-companion/import.html
+$dokka.location:web5.sdk.dids.did/BearerDid///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.did/-bearer-did/index.html
+$dokka.location:web5.sdk.dids.did/BearerDid/BearerDid/#kotlin.String#web5.sdk.dids.didcore.Did#web5.sdk.crypto.KeyManager#web5.sdk.dids.didcore.DidDocument/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.did/-bearer-did/-bearer-did.html
+$dokka.location:web5.sdk.dids.did/BearerDid/did/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.did/-bearer-did/did.html
+$dokka.location:web5.sdk.dids.did/BearerDid/document/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.did/-bearer-did/document.html
+$dokka.location:web5.sdk.dids.did/BearerDid/export/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.did/-bearer-did/export.html
+$dokka.location:web5.sdk.dids.did/BearerDid/getSigner/#web5.sdk.dids.didcore.VMSelector?/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.did/-bearer-did/get-signer.html
+$dokka.location:web5.sdk.dids.did/BearerDid/keyManager/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.did/-bearer-did/key-manager.html
+$dokka.location:web5.sdk.dids.did/BearerDid/uri/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.did/-bearer-did/uri.html
+$dokka.location:web5.sdk.dids.did/DidSigner///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.did/-did-signer/index.html
+$dokka.location:web5.sdk.dids.did/PortableDid///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.did/-portable-did/index.html
+$dokka.location:web5.sdk.dids.did/PortableDid/PortableDid/#kotlin.String#kotlin.collections.List[web5.sdk.crypto.jwk.Jwk]#web5.sdk.dids.didcore.DidDocument#kotlin.collections.Map[kotlin.String,kotlin.Any]/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.did/-portable-did/-portable-did.html
+$dokka.location:web5.sdk.dids.did/PortableDid/document/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.did/-portable-did/document.html
+$dokka.location:web5.sdk.dids.did/PortableDid/metadata/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.did/-portable-did/metadata.html
+$dokka.location:web5.sdk.dids.did/PortableDid/privateKeys/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.did/-portable-did/private-keys.html
+$dokka.location:web5.sdk.dids.did/PortableDid/uri/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.did/-portable-did/uri.html
 $dokka.location:web5.sdk.dids.didcore////PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/index.html
-$dokka.location:web5.sdk.dids.didcore/DIDDocument.Builder///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-d-i-d-document/-builder/index.html
-$dokka.location:web5.sdk.dids.didcore/DIDDocument.Builder/Builder/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-d-i-d-document/-builder/-builder.html
-$dokka.location:web5.sdk.dids.didcore/DIDDocument.Builder/alsoKnownAses/#kotlin.collections.List[kotlin.String]/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-d-i-d-document/-builder/also-known-ases.html
-$dokka.location:web5.sdk.dids.didcore/DIDDocument.Builder/build/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-d-i-d-document/-builder/build.html
-$dokka.location:web5.sdk.dids.didcore/DIDDocument.Builder/context/#kotlin.collections.List[kotlin.String]/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-d-i-d-document/-builder/context.html
-$dokka.location:web5.sdk.dids.didcore/DIDDocument.Builder/controllers/#kotlin.collections.List[kotlin.String]/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-d-i-d-document/-builder/controllers.html
-$dokka.location:web5.sdk.dids.didcore/DIDDocument.Builder/id/#kotlin.String/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-d-i-d-document/-builder/id.html
-$dokka.location:web5.sdk.dids.didcore/DIDDocument.Builder/services/#kotlin.collections.List[web5.sdk.dids.didcore.Service]?/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-d-i-d-document/-builder/services.html
-$dokka.location:web5.sdk.dids.didcore/DIDDocument.Builder/verificationMethodForPurposes/#web5.sdk.dids.didcore.VerificationMethod#kotlin.collections.List[web5.sdk.dids.didcore.Purpose]/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-d-i-d-document/-builder/verification-method-for-purposes.html
-$dokka.location:web5.sdk.dids.didcore/DIDDocument.Builder/verificationMethodIdsForPurpose/#kotlin.collections.MutableList[kotlin.String]?#web5.sdk.dids.didcore.Purpose/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-d-i-d-document/-builder/verification-method-ids-for-purpose.html
-$dokka.location:web5.sdk.dids.didcore/DIDDocument///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-d-i-d-document/index.html
-$dokka.location:web5.sdk.dids.didcore/DIDDocument/DIDDocument/#kotlin.String#kotlin.collections.List[kotlin.String]?#kotlin.collections.List[kotlin.String]?#kotlin.collections.List[kotlin.String]?#kotlin.collections.List[web5.sdk.dids.didcore.VerificationMethod]?#kotlin.collections.List[web5.sdk.dids.didcore.Service]?#kotlin.collections.List[kotlin.String]?#kotlin.collections.List[kotlin.String]?#kotlin.collections.List[kotlin.String]?#kotlin.collections.List[kotlin.String]?#kotlin.collections.List[kotlin.String]?/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-d-i-d-document/-d-i-d-document.html
-$dokka.location:web5.sdk.dids.didcore/DIDDocument/alsoKnownAs/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-d-i-d-document/also-known-as.html
-$dokka.location:web5.sdk.dids.didcore/DIDDocument/assertionMethod/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-d-i-d-document/assertion-method.html
-$dokka.location:web5.sdk.dids.didcore/DIDDocument/authentication/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-d-i-d-document/authentication.html
-$dokka.location:web5.sdk.dids.didcore/DIDDocument/capabilityDelegation/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-d-i-d-document/capability-delegation.html
-$dokka.location:web5.sdk.dids.didcore/DIDDocument/capabilityInvocation/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-d-i-d-document/capability-invocation.html
-$dokka.location:web5.sdk.dids.didcore/DIDDocument/context/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-d-i-d-document/context.html
-$dokka.location:web5.sdk.dids.didcore/DIDDocument/controller/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-d-i-d-document/controller.html
-$dokka.location:web5.sdk.dids.didcore/DIDDocument/findAssertionMethodById/#kotlin.String?/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-d-i-d-document/find-assertion-method-by-id.html
-$dokka.location:web5.sdk.dids.didcore/DIDDocument/getAbsoluteResourceID/#kotlin.String/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-d-i-d-document/get-absolute-resource-i-d.html
-$dokka.location:web5.sdk.dids.didcore/DIDDocument/id/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-d-i-d-document/id.html
-$dokka.location:web5.sdk.dids.didcore/DIDDocument/keyAgreement/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-d-i-d-document/key-agreement.html
-$dokka.location:web5.sdk.dids.didcore/DIDDocument/selectVerificationMethod/#web5.sdk.dids.didcore.VMSelector?/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-d-i-d-document/select-verification-method.html
-$dokka.location:web5.sdk.dids.didcore/DIDDocument/service/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-d-i-d-document/service.html
-$dokka.location:web5.sdk.dids.didcore/DIDDocument/toString/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-d-i-d-document/to-string.html
-$dokka.location:web5.sdk.dids.didcore/DIDDocument/verificationMethod/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-d-i-d-document/verification-method.html
-$dokka.location:web5.sdk.dids.didcore/DIDDocumentMetadata///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-d-i-d-document-metadata/index.html
-$dokka.location:web5.sdk.dids.didcore/DIDDocumentMetadata/DIDDocumentMetadata/#kotlin.String?#kotlin.String?#kotlin.Boolean?#kotlin.String?#kotlin.String?#kotlin.String?#kotlin.String?#kotlin.String?/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-d-i-d-document-metadata/-d-i-d-document-metadata.html
-$dokka.location:web5.sdk.dids.didcore/DIDDocumentMetadata/canonicalId/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-d-i-d-document-metadata/canonical-id.html
-$dokka.location:web5.sdk.dids.didcore/DIDDocumentMetadata/created/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-d-i-d-document-metadata/created.html
-$dokka.location:web5.sdk.dids.didcore/DIDDocumentMetadata/deactivated/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-d-i-d-document-metadata/deactivated.html
-$dokka.location:web5.sdk.dids.didcore/DIDDocumentMetadata/equivalentId/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-d-i-d-document-metadata/equivalent-id.html
-$dokka.location:web5.sdk.dids.didcore/DIDDocumentMetadata/nextUpdate/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-d-i-d-document-metadata/next-update.html
-$dokka.location:web5.sdk.dids.didcore/DIDDocumentMetadata/nextVersionId/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-d-i-d-document-metadata/next-version-id.html
-$dokka.location:web5.sdk.dids.didcore/DIDDocumentMetadata/updated/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-d-i-d-document-metadata/updated.html
-$dokka.location:web5.sdk.dids.didcore/DIDDocumentMetadata/versionId/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-d-i-d-document-metadata/version-id.html
-$dokka.location:web5.sdk.dids.didcore/DidUri.Parser///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-did-uri/-parser/index.html
-$dokka.location:web5.sdk.dids.didcore/DidUri.Parser/parse/#kotlin.String/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-did-uri/-parser/parse.html
-$dokka.location:web5.sdk.dids.didcore/DidUri///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-did-uri/index.html
-$dokka.location:web5.sdk.dids.didcore/DidUri/DidUri/#kotlin.String#kotlin.String#kotlin.String#kotlin.String#kotlin.collections.Map[kotlin.String,kotlin.String]#kotlin.String?#kotlin.String?#kotlin.String?/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-did-uri/-did-uri.html
-$dokka.location:web5.sdk.dids.didcore/DidUri/fragment/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-did-uri/fragment.html
-$dokka.location:web5.sdk.dids.didcore/DidUri/id/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-did-uri/id.html
-$dokka.location:web5.sdk.dids.didcore/DidUri/marshalText/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-did-uri/marshal-text.html
-$dokka.location:web5.sdk.dids.didcore/DidUri/method/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-did-uri/method.html
-$dokka.location:web5.sdk.dids.didcore/DidUri/params/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-did-uri/params.html
-$dokka.location:web5.sdk.dids.didcore/DidUri/path/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-did-uri/path.html
-$dokka.location:web5.sdk.dids.didcore/DidUri/query/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-did-uri/query.html
-$dokka.location:web5.sdk.dids.didcore/DidUri/toString/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-did-uri/to-string.html
-$dokka.location:web5.sdk.dids.didcore/DidUri/unmarshalText/#kotlin.ByteArray/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-did-uri/unmarshal-text.html
-$dokka.location:web5.sdk.dids.didcore/DidUri/uri/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-did-uri/uri.html
-$dokka.location:web5.sdk.dids.didcore/DidUri/url/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-did-uri/url.html
+$dokka.location:web5.sdk.dids.didcore/Did.Parser///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-did/-parser/index.html
+$dokka.location:web5.sdk.dids.didcore/Did.Parser/parse/#kotlin.String/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-did/-parser/parse.html
+$dokka.location:web5.sdk.dids.didcore/Did///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-did/index.html
+$dokka.location:web5.sdk.dids.didcore/Did/Did/#kotlin.String#kotlin.String#kotlin.String#kotlin.String#kotlin.collections.Map[kotlin.String,kotlin.String]#kotlin.String?#kotlin.String?#kotlin.String?/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-did/-did.html
+$dokka.location:web5.sdk.dids.didcore/Did/fragment/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-did/fragment.html
+$dokka.location:web5.sdk.dids.didcore/Did/id/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-did/id.html
+$dokka.location:web5.sdk.dids.didcore/Did/marshalText/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-did/marshal-text.html
+$dokka.location:web5.sdk.dids.didcore/Did/method/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-did/method.html
+$dokka.location:web5.sdk.dids.didcore/Did/params/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-did/params.html
+$dokka.location:web5.sdk.dids.didcore/Did/path/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-did/path.html
+$dokka.location:web5.sdk.dids.didcore/Did/query/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-did/query.html
+$dokka.location:web5.sdk.dids.didcore/Did/toString/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-did/to-string.html
+$dokka.location:web5.sdk.dids.didcore/Did/unmarshalText/#kotlin.ByteArray/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-did/unmarshal-text.html
+$dokka.location:web5.sdk.dids.didcore/Did/uri/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-did/uri.html
+$dokka.location:web5.sdk.dids.didcore/Did/url/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-did/url.html
+$dokka.location:web5.sdk.dids.didcore/DidDocument.Builder///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-did-document/-builder/index.html
+$dokka.location:web5.sdk.dids.didcore/DidDocument.Builder/Builder/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-did-document/-builder/-builder.html
+$dokka.location:web5.sdk.dids.didcore/DidDocument.Builder/alsoKnownAses/#kotlin.collections.List[kotlin.String]/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-did-document/-builder/also-known-ases.html
+$dokka.location:web5.sdk.dids.didcore/DidDocument.Builder/build/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-did-document/-builder/build.html
+$dokka.location:web5.sdk.dids.didcore/DidDocument.Builder/context/#kotlin.collections.List[kotlin.String]/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-did-document/-builder/context.html
+$dokka.location:web5.sdk.dids.didcore/DidDocument.Builder/controllers/#kotlin.collections.List[kotlin.String]/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-did-document/-builder/controllers.html
+$dokka.location:web5.sdk.dids.didcore/DidDocument.Builder/id/#kotlin.String/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-did-document/-builder/id.html
+$dokka.location:web5.sdk.dids.didcore/DidDocument.Builder/services/#kotlin.collections.List[web5.sdk.dids.didcore.Service]?/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-did-document/-builder/services.html
+$dokka.location:web5.sdk.dids.didcore/DidDocument.Builder/verificationMethodForPurposes/#web5.sdk.dids.didcore.VerificationMethod#kotlin.collections.List[web5.sdk.dids.didcore.Purpose]/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-did-document/-builder/verification-method-for-purposes.html
+$dokka.location:web5.sdk.dids.didcore/DidDocument.Builder/verificationMethodIdsForPurpose/#kotlin.collections.MutableList[kotlin.String]?#web5.sdk.dids.didcore.Purpose/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-did-document/-builder/verification-method-ids-for-purpose.html
+$dokka.location:web5.sdk.dids.didcore/DidDocument///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-did-document/index.html
+$dokka.location:web5.sdk.dids.didcore/DidDocument/DidDocument/#kotlin.String#kotlin.collections.List[kotlin.String]?#kotlin.collections.List[kotlin.String]?#kotlin.collections.List[kotlin.String]?#kotlin.collections.List[web5.sdk.dids.didcore.VerificationMethod]?#kotlin.collections.List[web5.sdk.dids.didcore.Service]?#kotlin.collections.List[kotlin.String]?#kotlin.collections.List[kotlin.String]?#kotlin.collections.List[kotlin.String]?#kotlin.collections.List[kotlin.String]?#kotlin.collections.List[kotlin.String]?/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-did-document/-did-document.html
+$dokka.location:web5.sdk.dids.didcore/DidDocument/alsoKnownAs/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-did-document/also-known-as.html
+$dokka.location:web5.sdk.dids.didcore/DidDocument/assertionMethod/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-did-document/assertion-method.html
+$dokka.location:web5.sdk.dids.didcore/DidDocument/authentication/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-did-document/authentication.html
+$dokka.location:web5.sdk.dids.didcore/DidDocument/capabilityDelegation/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-did-document/capability-delegation.html
+$dokka.location:web5.sdk.dids.didcore/DidDocument/capabilityInvocation/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-did-document/capability-invocation.html
+$dokka.location:web5.sdk.dids.didcore/DidDocument/context/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-did-document/context.html
+$dokka.location:web5.sdk.dids.didcore/DidDocument/controller/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-did-document/controller.html
+$dokka.location:web5.sdk.dids.didcore/DidDocument/findAssertionMethodById/#kotlin.String?/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-did-document/find-assertion-method-by-id.html
+$dokka.location:web5.sdk.dids.didcore/DidDocument/getAbsoluteResourceID/#kotlin.String/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-did-document/get-absolute-resource-i-d.html
+$dokka.location:web5.sdk.dids.didcore/DidDocument/id/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-did-document/id.html
+$dokka.location:web5.sdk.dids.didcore/DidDocument/keyAgreement/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-did-document/key-agreement.html
+$dokka.location:web5.sdk.dids.didcore/DidDocument/selectVerificationMethod/#web5.sdk.dids.didcore.VMSelector?/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-did-document/select-verification-method.html
+$dokka.location:web5.sdk.dids.didcore/DidDocument/service/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-did-document/service.html
+$dokka.location:web5.sdk.dids.didcore/DidDocument/toString/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-did-document/to-string.html
+$dokka.location:web5.sdk.dids.didcore/DidDocument/verificationMethod/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-did-document/verification-method.html
+$dokka.location:web5.sdk.dids.didcore/DidDocumentMetadata///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-did-document-metadata/index.html
+$dokka.location:web5.sdk.dids.didcore/DidDocumentMetadata/DidDocumentMetadata/#kotlin.String?#kotlin.String?#kotlin.Boolean?#kotlin.String?#kotlin.String?#kotlin.String?#kotlin.String?#kotlin.String?/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-did-document-metadata/-did-document-metadata.html
+$dokka.location:web5.sdk.dids.didcore/DidDocumentMetadata/canonicalId/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-did-document-metadata/canonical-id.html
+$dokka.location:web5.sdk.dids.didcore/DidDocumentMetadata/created/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-did-document-metadata/created.html
+$dokka.location:web5.sdk.dids.didcore/DidDocumentMetadata/deactivated/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-did-document-metadata/deactivated.html
+$dokka.location:web5.sdk.dids.didcore/DidDocumentMetadata/equivalentId/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-did-document-metadata/equivalent-id.html
+$dokka.location:web5.sdk.dids.didcore/DidDocumentMetadata/nextUpdate/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-did-document-metadata/next-update.html
+$dokka.location:web5.sdk.dids.didcore/DidDocumentMetadata/nextVersionId/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-did-document-metadata/next-version-id.html
+$dokka.location:web5.sdk.dids.didcore/DidDocumentMetadata/updated/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-did-document-metadata/updated.html
+$dokka.location:web5.sdk.dids.didcore/DidDocumentMetadata/versionId/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-did-document-metadata/version-id.html
 $dokka.location:web5.sdk.dids.didcore/ID///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-i-d/index.html
 $dokka.location:web5.sdk.dids.didcore/ID/ID/#kotlin.String/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-i-d/-i-d.html
 $dokka.location:web5.sdk.dids.didcore/ID/value/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-i-d/value.html
@@ -368,10 +411,10 @@ $dokka.location:web5.sdk.dids.didcore/VerificationMethod.Builder/Builder/#/Point
 $dokka.location:web5.sdk.dids.didcore/VerificationMethod.Builder/build/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-verification-method/-builder/build.html
 $dokka.location:web5.sdk.dids.didcore/VerificationMethod.Builder/controller/#kotlin.String/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-verification-method/-builder/controller.html
 $dokka.location:web5.sdk.dids.didcore/VerificationMethod.Builder/id/#kotlin.String/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-verification-method/-builder/id.html
-$dokka.location:web5.sdk.dids.didcore/VerificationMethod.Builder/publicKeyJwk/#[Error type: Unresolved type for JWK]/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-verification-method/-builder/public-key-jwk.html
+$dokka.location:web5.sdk.dids.didcore/VerificationMethod.Builder/publicKeyJwk/#web5.sdk.crypto.jwk.Jwk/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-verification-method/-builder/public-key-jwk.html
 $dokka.location:web5.sdk.dids.didcore/VerificationMethod.Builder/type/#kotlin.String/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-verification-method/-builder/type.html
 $dokka.location:web5.sdk.dids.didcore/VerificationMethod///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-verification-method/index.html
-$dokka.location:web5.sdk.dids.didcore/VerificationMethod/VerificationMethod/#kotlin.String#kotlin.String#kotlin.String#[Error type: Unresolved type for JWK]?/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-verification-method/-verification-method.html
+$dokka.location:web5.sdk.dids.didcore/VerificationMethod/VerificationMethod/#kotlin.String#kotlin.String#kotlin.String#web5.sdk.crypto.jwk.Jwk?/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-verification-method/-verification-method.html
 $dokka.location:web5.sdk.dids.didcore/VerificationMethod/controller/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-verification-method/controller.html
 $dokka.location:web5.sdk.dids.didcore/VerificationMethod/id/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-verification-method/id.html
 $dokka.location:web5.sdk.dids.didcore/VerificationMethod/isType/#kotlin.String/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.didcore/-verification-method/is-type.html
@@ -395,42 +438,39 @@ $dokka.location:web5.sdk.dids.exceptions/PkarrRecordResponseException///Pointing
 $dokka.location:web5.sdk.dids.exceptions/PkarrRecordResponseException/PkarrRecordResponseException/#kotlin.String/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.exceptions/-pkarr-record-response-exception/-pkarr-record-response-exception.html
 $dokka.location:web5.sdk.dids.exceptions/PublicKeyJwkMissingException///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.exceptions/-public-key-jwk-missing-exception/index.html
 $dokka.location:web5.sdk.dids.exceptions/PublicKeyJwkMissingException/PublicKeyJwkMissingException/#kotlin.String/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.exceptions/-public-key-jwk-missing-exception/-public-key-jwk-missing-exception.html
-$dokka.location:web5.sdk.dids.extensions////PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.extensions/index.html
-$dokka.location:web5.sdk.dids.extensions//load/web5.sdk.dids.Did.Companion#kotlin.String#web5.sdk.crypto.KeyManager/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.extensions/load.html
 $dokka.location:web5.sdk.dids.methods.dht////PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.dht/index.html
 $dokka.location:web5.sdk.dids.methods.dht//DidDhtApi/#kotlin.Function1[web5.sdk.dids.methods.dht.DidDhtConfiguration,kotlin.Unit]/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.dht/-did-dht-api.html
 $dokka.location:web5.sdk.dids.methods.dht/CreateDidDhtOptions///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.dht/-create-did-dht-options/index.html
-$dokka.location:web5.sdk.dids.methods.dht/CreateDidDhtOptions/CreateDidDhtOptions/#kotlin.collections.Iterable[[Error type: Unresolved type for Triple<JWK, List<Purpose>, String?>][[Error type: Unresolved type for JWK],kotlin.collections.List[web5.sdk.dids.didcore.Purpose],kotlin.String?]]?#kotlin.collections.Iterable[web5.sdk.dids.didcore.Service]?#kotlin.Boolean#kotlin.collections.Iterable[kotlin.String]?#kotlin.collections.Iterable[kotlin.String]?/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.dht/-create-did-dht-options/-create-did-dht-options.html
+$dokka.location:web5.sdk.dids.methods.dht/CreateDidDhtOptions/CreateDidDhtOptions/#kotlin.collections.Iterable[[Error type: Unresolved type for Triple<Jwk, List<Purpose>, String?>][web5.sdk.crypto.jwk.Jwk,kotlin.collections.List[web5.sdk.dids.didcore.Purpose],kotlin.String?]]?#kotlin.collections.Iterable[web5.sdk.dids.didcore.Service]?#kotlin.Boolean#kotlin.collections.Iterable[kotlin.String]?#kotlin.collections.Iterable[kotlin.String]?/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.dht/-create-did-dht-options/-create-did-dht-options.html
 $dokka.location:web5.sdk.dids.methods.dht/CreateDidDhtOptions/alsoKnownAses/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.dht/-create-did-dht-options/also-known-ases.html
 $dokka.location:web5.sdk.dids.methods.dht/CreateDidDhtOptions/controllers/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.dht/-create-did-dht-options/controllers.html
 $dokka.location:web5.sdk.dids.methods.dht/CreateDidDhtOptions/publish/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.dht/-create-did-dht-options/publish.html
 $dokka.location:web5.sdk.dids.methods.dht/CreateDidDhtOptions/services/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.dht/-create-did-dht-options/services.html
 $dokka.location:web5.sdk.dids.methods.dht/CreateDidDhtOptions/verificationMethods/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.dht/-create-did-dht-options/verification-methods.html
-$dokka.location:web5.sdk.dids.methods.dht/DIDDhtDocumentMetadata///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.dht/-d-i-d-dht-document-metadata/index.html
-$dokka.location:web5.sdk.dids.methods.dht/DIDDhtDocumentMetadata/DIDDhtDocumentMetadata/#kotlin.collections.List[kotlin.Int]?/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.dht/-d-i-d-dht-document-metadata/-d-i-d-dht-document-metadata.html
-$dokka.location:web5.sdk.dids.methods.dht/DIDDhtDocumentMetadata/types/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.dht/-d-i-d-dht-document-metadata/types.html
 $dokka.location:web5.sdk.dids.methods.dht/DidDht.Default///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.dht/-did-dht/-default/index.html
 $dokka.location:web5.sdk.dids.methods.dht/DidDht///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.dht/-did-dht/index.html
-$dokka.location:web5.sdk.dids.methods.dht/DidDht/DidDht/#kotlin.String#web5.sdk.crypto.KeyManager#web5.sdk.dids.didcore.DIDDocument?#web5.sdk.dids.methods.dht.DidDhtApi/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.dht/-did-dht/-did-dht.html
-$dokka.location:web5.sdk.dids.methods.dht/DidDht/create/#web5.sdk.dids.methods.dht.CreateDidDhtOptions/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.dht/-did-dht/create.html
+$dokka.location:web5.sdk.dids.methods.dht/DidDht/DidDht/#kotlin.String#web5.sdk.crypto.KeyManager#web5.sdk.dids.didcore.DidDocument?/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.dht/-did-dht/-did-dht.html
 $dokka.location:web5.sdk.dids.methods.dht/DidDht/didDocument/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.dht/-did-dht/did-document.html
 $dokka.location:web5.sdk.dids.methods.dht/DidDht/fromDnsPacket/#kotlin.String#[Error type: Unresolved type for Message]/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.dht/-did-dht/from-dns-packet.html
-$dokka.location:web5.sdk.dids.methods.dht/DidDht/publish/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.dht/-did-dht/publish.html
-$dokka.location:web5.sdk.dids.methods.dht/DidDht/resolve/#web5.sdk.dids.ResolveDidOptions/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.dht/-did-dht/resolve.html
+$dokka.location:web5.sdk.dids.methods.dht/DidDht/keyManager/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.dht/-did-dht/key-manager.html
 $dokka.location:web5.sdk.dids.methods.dht/DidDht/suffix/#kotlin.String/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.dht/-did-dht/suffix.html
-$dokka.location:web5.sdk.dids.methods.dht/DidDht/toDnsPacket/#web5.sdk.dids.didcore.DIDDocument#kotlin.collections.List[web5.sdk.dids.methods.dht.DidDhtTypeIndexing]?/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.dht/-did-dht/to-dns-packet.html
+$dokka.location:web5.sdk.dids.methods.dht/DidDht/toDnsPacket/#web5.sdk.dids.didcore.DidDocument#kotlin.collections.List[web5.sdk.dids.methods.dht.DidDhtTypeIndexing]?/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.dht/-did-dht/to-dns-packet.html
+$dokka.location:web5.sdk.dids.methods.dht/DidDht/uri/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.dht/-did-dht/uri.html
 $dokka.location:web5.sdk.dids.methods.dht/DidDht/validate/#kotlin.String/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.dht/-did-dht/validate.html
 $dokka.location:web5.sdk.dids.methods.dht/DidDhtApi///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.dht/-did-dht-api/index.html
 $dokka.location:web5.sdk.dids.methods.dht/DidDhtApi/DidDhtApi/#web5.sdk.dids.methods.dht.DidDhtConfiguration/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.dht/-did-dht-api/-did-dht-api.html
 $dokka.location:web5.sdk.dids.methods.dht/DidDhtApi/create/#web5.sdk.crypto.KeyManager#web5.sdk.dids.methods.dht.CreateDidDhtOptions?/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.dht/-did-dht-api/create.html
-$dokka.location:web5.sdk.dids.methods.dht/DidDhtApi/load/#kotlin.String#web5.sdk.crypto.KeyManager/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.dht/-did-dht-api/load.html
+$dokka.location:web5.sdk.dids.methods.dht/DidDhtApi/import/#web5.sdk.dids.did.PortableDid#web5.sdk.crypto.KeyManager/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.dht/-did-dht-api/import.html
 $dokka.location:web5.sdk.dids.methods.dht/DidDhtApi/methodName/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.dht/-did-dht-api/method-name.html
-$dokka.location:web5.sdk.dids.methods.dht/DidDhtApi/publish/#web5.sdk.crypto.KeyManager#web5.sdk.dids.didcore.DIDDocument#kotlin.collections.List[web5.sdk.dids.methods.dht.DidDhtTypeIndexing]?/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.dht/-did-dht-api/publish.html
-$dokka.location:web5.sdk.dids.methods.dht/DidDhtApi/resolve/#kotlin.String#web5.sdk.dids.ResolveDidOptions?/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.dht/-did-dht-api/resolve.html
+$dokka.location:web5.sdk.dids.methods.dht/DidDhtApi/publish/#web5.sdk.crypto.KeyManager#web5.sdk.dids.didcore.DidDocument#kotlin.collections.List[web5.sdk.dids.methods.dht.DidDhtTypeIndexing]?/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.dht/-did-dht-api/publish.html
+$dokka.location:web5.sdk.dids.methods.dht/DidDhtApi/resolve/#kotlin.String/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.dht/-did-dht-api/resolve.html
 $dokka.location:web5.sdk.dids.methods.dht/DidDhtApi/suffix/#kotlin.String/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.dht/-did-dht-api/suffix.html
 $dokka.location:web5.sdk.dids.methods.dht/DidDhtConfiguration///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.dht/-did-dht-configuration/index.html
 $dokka.location:web5.sdk.dids.methods.dht/DidDhtConfiguration/engine/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.dht/-did-dht-configuration/engine.html
 $dokka.location:web5.sdk.dids.methods.dht/DidDhtConfiguration/gateway/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.dht/-did-dht-configuration/gateway.html
+$dokka.location:web5.sdk.dids.methods.dht/DidDhtDocumentMetadata///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.dht/-did-dht-document-metadata/index.html
+$dokka.location:web5.sdk.dids.methods.dht/DidDhtDocumentMetadata/DidDhtDocumentMetadata/#kotlin.collections.List[kotlin.Int]?/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.dht/-did-dht-document-metadata/-did-dht-document-metadata.html
+$dokka.location:web5.sdk.dids.methods.dht/DidDhtDocumentMetadata/types/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.dht/-did-dht-document-metadata/types.html
 $dokka.location:web5.sdk.dids.methods.dht/DidDhtTypeIndexing.Companion///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.dht/-did-dht-type-indexing/-companion/index.html
 $dokka.location:web5.sdk.dids.methods.dht/DidDhtTypeIndexing.Companion/fromInt/#kotlin.Int/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.dht/-did-dht-type-indexing/-companion/from-int.html
 $dokka.location:web5.sdk.dids.methods.dht/DidDhtTypeIndexing.Corporation///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}-web5 -s-d-k -documentation/web5.sdk.dids.methods.dht/-did-dht-type-indexing/-corporation/index.html
@@ -445,56 +485,39 @@ $dokka.location:web5.sdk.dids.methods.dht/DidDhtTypeIndexing/index/#/PointingToD
 $dokka.location:web5.sdk.dids.methods.dht/DidDhtTypeIndexing/valueOf/#kotlin.String/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.dht/-did-dht-type-indexing/value-of.html
 $dokka.location:web5.sdk.dids.methods.dht/DidDhtTypeIndexing/values/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.dht/-did-dht-type-indexing/values.html
 $dokka.location:web5.sdk.dids.methods.jwk////PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.jwk/index.html
-$dokka.location:web5.sdk.dids.methods.jwk/CreateDidJwkOptions///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.jwk/-create-did-jwk-options/index.html
-$dokka.location:web5.sdk.dids.methods.jwk/CreateDidJwkOptions/CreateDidJwkOptions/#web5.sdk.crypto.AlgorithmId/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.jwk/-create-did-jwk-options/-create-did-jwk-options.html
-$dokka.location:web5.sdk.dids.methods.jwk/CreateDidJwkOptions/algorithmId/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.jwk/-create-did-jwk-options/algorithm-id.html
-$dokka.location:web5.sdk.dids.methods.jwk/DidJwk.Companion///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.jwk/-did-jwk/-companion/index.html
-$dokka.location:web5.sdk.dids.methods.jwk/DidJwk.Companion/create/#web5.sdk.crypto.KeyManager#web5.sdk.dids.methods.jwk.CreateDidJwkOptions?/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.jwk/-did-jwk/-companion/create.html
-$dokka.location:web5.sdk.dids.methods.jwk/DidJwk.Companion/load/#kotlin.String#web5.sdk.crypto.KeyManager/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.jwk/-did-jwk/-companion/load.html
-$dokka.location:web5.sdk.dids.methods.jwk/DidJwk.Companion/methodName/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.jwk/-did-jwk/-companion/method-name.html
-$dokka.location:web5.sdk.dids.methods.jwk/DidJwk.Companion/resolve/#kotlin.String#web5.sdk.dids.ResolveDidOptions?/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.jwk/-did-jwk/-companion/resolve.html
 $dokka.location:web5.sdk.dids.methods.jwk/DidJwk///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.jwk/-did-jwk/index.html
-$dokka.location:web5.sdk.dids.methods.jwk/DidJwk/DidJwk/#kotlin.String#web5.sdk.crypto.KeyManager/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.jwk/-did-jwk/-did-jwk.html
-$dokka.location:web5.sdk.dids.methods.jwk/DidJwk/resolve/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.jwk/-did-jwk/resolve.html
+$dokka.location:web5.sdk.dids.methods.jwk/DidJwk/create/#web5.sdk.crypto.KeyManager#web5.sdk.crypto.AlgorithmId/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.jwk/-did-jwk/create.html
+$dokka.location:web5.sdk.dids.methods.jwk/DidJwk/import/#web5.sdk.dids.did.PortableDid#web5.sdk.crypto.KeyManager/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.jwk/-did-jwk/import.html
+$dokka.location:web5.sdk.dids.methods.jwk/DidJwk/methodName/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.jwk/-did-jwk/method-name.html
+$dokka.location:web5.sdk.dids.methods.jwk/DidJwk/resolve/#kotlin.String/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.jwk/-did-jwk/resolve.html
 $dokka.location:web5.sdk.dids.methods.key////PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.key/index.html
 $dokka.location:web5.sdk.dids.methods.key/CreateDidKeyOptions///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.key/-create-did-key-options/index.html
 $dokka.location:web5.sdk.dids.methods.key/CreateDidKeyOptions/CreateDidKeyOptions/#web5.sdk.crypto.AlgorithmId/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.key/-create-did-key-options/-create-did-key-options.html
 $dokka.location:web5.sdk.dids.methods.key/CreateDidKeyOptions/algorithmId/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.key/-create-did-key-options/algorithm-id.html
 $dokka.location:web5.sdk.dids.methods.key/DidKey.Companion///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.key/-did-key/-companion/index.html
 $dokka.location:web5.sdk.dids.methods.key/DidKey.Companion/create/#web5.sdk.crypto.KeyManager#web5.sdk.dids.methods.key.CreateDidKeyOptions?/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.key/-did-key/-companion/create.html
-$dokka.location:web5.sdk.dids.methods.key/DidKey.Companion/load/#kotlin.String#web5.sdk.crypto.KeyManager/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.key/-did-key/-companion/load.html
+$dokka.location:web5.sdk.dids.methods.key/DidKey.Companion/import/#web5.sdk.dids.did.PortableDid#web5.sdk.crypto.KeyManager/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.key/-did-key/-companion/import.html
 $dokka.location:web5.sdk.dids.methods.key/DidKey.Companion/methodName/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.key/-did-key/-companion/method-name.html
-$dokka.location:web5.sdk.dids.methods.key/DidKey.Companion/resolve/#kotlin.String#web5.sdk.dids.ResolveDidOptions?/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.key/-did-key/-companion/resolve.html
+$dokka.location:web5.sdk.dids.methods.key/DidKey.Companion/resolve/#kotlin.String/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.key/-did-key/-companion/resolve.html
 $dokka.location:web5.sdk.dids.methods.key/DidKey///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.key/-did-key/index.html
 $dokka.location:web5.sdk.dids.methods.key/DidKey/DidKey/#kotlin.String#web5.sdk.crypto.KeyManager/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.key/-did-key/-did-key.html
+$dokka.location:web5.sdk.dids.methods.key/DidKey/keyManager/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.key/-did-key/key-manager.html
 $dokka.location:web5.sdk.dids.methods.key/DidKey/resolve/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.key/-did-key/resolve.html
+$dokka.location:web5.sdk.dids.methods.key/DidKey/uri/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.key/-did-key/uri.html
 $dokka.location:web5.sdk.dids.methods.web////PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.web/index.html
 $dokka.location:web5.sdk.dids.methods.web//DidWebApi/#kotlin.Function1[web5.sdk.dids.methods.web.DidWebApiConfiguration,kotlin.Unit]/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.web/-did-web-api.html
 $dokka.location:web5.sdk.dids.methods.web/DidWeb.Default///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.web/-did-web/-default/index.html
 $dokka.location:web5.sdk.dids.methods.web/DidWeb///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.web/-did-web/index.html
-$dokka.location:web5.sdk.dids.methods.web/DidWeb/DidWeb/#kotlin.String#web5.sdk.crypto.KeyManager#web5.sdk.dids.methods.web.DidWebApi/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.web/-did-web/-did-web.html
-$dokka.location:web5.sdk.dids.methods.web/DidWeb/resolve/#web5.sdk.dids.ResolveDidOptions?/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.web/-did-web/resolve.html
+$dokka.location:web5.sdk.dids.methods.web/DidWeb/DidWeb/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.web/-did-web/-did-web.html
 $dokka.location:web5.sdk.dids.methods.web/DidWebApi///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.web/-did-web-api/index.html
 $dokka.location:web5.sdk.dids.methods.web/DidWebApi/DidWebApi/#web5.sdk.dids.methods.web.DidWebApiConfiguration/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.web/-did-web-api/-did-web-api.html
-$dokka.location:web5.sdk.dids.methods.web/DidWebApi/create/#web5.sdk.crypto.KeyManager#web5.sdk.dids.CreateDidOptions?/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.web/-did-web-api/create.html
-$dokka.location:web5.sdk.dids.methods.web/DidWebApi/load/#kotlin.String#web5.sdk.crypto.KeyManager/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.web/-did-web-api/load.html
+$dokka.location:web5.sdk.dids.methods.web/DidWebApi/import/#web5.sdk.dids.did.PortableDid#web5.sdk.crypto.KeyManager/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.web/-did-web-api/import.html
 $dokka.location:web5.sdk.dids.methods.web/DidWebApi/methodName/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.web/-did-web-api/method-name.html
-$dokka.location:web5.sdk.dids.methods.web/DidWebApi/resolve/#kotlin.String#web5.sdk.dids.ResolveDidOptions?/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.web/-did-web-api/resolve.html
+$dokka.location:web5.sdk.dids.methods.web/DidWebApi/resolve/#kotlin.String/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.web/-did-web-api/resolve.html
 $dokka.location:web5.sdk.dids.methods.web/DidWebApiConfiguration///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.web/-did-web-api-configuration/index.html
 $dokka.location:web5.sdk.dids.methods.web/DidWebApiConfiguration/engine/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids.methods.web/-did-web-api-configuration/engine.html
 $dokka.location:web5.sdk.dids////PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids/index.html
 $dokka.location:web5.sdk.dids/CreateDidOptions///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids/-create-did-options/index.html
-$dokka.location:web5.sdk.dids/CreationMetadata///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids/-creation-metadata/index.html
-$dokka.location:web5.sdk.dids/Did.Companion///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids/-did/-companion/index.html
-$dokka.location:web5.sdk.dids/Did///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids/-did/index.html
-$dokka.location:web5.sdk.dids/Did/Did/#kotlin.String#web5.sdk.crypto.KeyManager/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids/-did/-did.html
-$dokka.location:web5.sdk.dids/Did/keyManager/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids/-did/key-manager.html
-$dokka.location:web5.sdk.dids/Did/uri/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids/-did/uri.html
-$dokka.location:web5.sdk.dids/DidMethod///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids/-did-method/index.html
-$dokka.location:web5.sdk.dids/DidMethod/create/#web5.sdk.crypto.KeyManager#TypeParam(bounds=[web5.sdk.dids.CreateDidOptions])?/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids/-did-method/create.html
-$dokka.location:web5.sdk.dids/DidMethod/load/#kotlin.String#web5.sdk.crypto.KeyManager/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids/-did-method/load.html
-$dokka.location:web5.sdk.dids/DidMethod/methodName/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids/-did-method/method-name.html
-$dokka.location:web5.sdk.dids/DidMethod/resolve/#kotlin.String#web5.sdk.dids.ResolveDidOptions?/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids/-did-method/resolve.html
 $dokka.location:web5.sdk.dids/DidResolutionMetadata///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids/-did-resolution-metadata/index.html
 $dokka.location:web5.sdk.dids/DidResolutionMetadata/DidResolutionMetadata/#kotlin.String?#kotlin.String?#kotlin.collections.MutableMap[kotlin.String,kotlin.Any]?/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids/-did-resolution-metadata/-did-resolution-metadata.html
 $dokka.location:web5.sdk.dids/DidResolutionMetadata/additionalProperties/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids/-did-resolution-metadata/additional-properties.html
@@ -503,7 +526,7 @@ $dokka.location:web5.sdk.dids/DidResolutionMetadata/error/#/PointingToDeclaratio
 $dokka.location:web5.sdk.dids/DidResolutionResult.Companion///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids/-did-resolution-result/-companion/index.html
 $dokka.location:web5.sdk.dids/DidResolutionResult.Companion/fromResolutionError/#web5.sdk.dids.ResolutionError/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids/-did-resolution-result/-companion/from-resolution-error.html
 $dokka.location:web5.sdk.dids/DidResolutionResult///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids/-did-resolution-result/index.html
-$dokka.location:web5.sdk.dids/DidResolutionResult/DidResolutionResult/#kotlin.String?#web5.sdk.dids.didcore.DIDDocument?#web5.sdk.dids.didcore.DIDDocumentMetadata#web5.sdk.dids.DidResolutionMetadata/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids/-did-resolution-result/-did-resolution-result.html
+$dokka.location:web5.sdk.dids/DidResolutionResult/DidResolutionResult/#kotlin.String?#web5.sdk.dids.didcore.DidDocument?#web5.sdk.dids.didcore.DidDocumentMetadata#web5.sdk.dids.DidResolutionMetadata/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids/-did-resolution-result/-did-resolution-result.html
 $dokka.location:web5.sdk.dids/DidResolutionResult/context/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids/-did-resolution-result/context.html
 $dokka.location:web5.sdk.dids/DidResolutionResult/didDocument/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids/-did-resolution-result/did-document.html
 $dokka.location:web5.sdk.dids/DidResolutionResult/didDocumentMetadata/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids/-did-resolution-result/did-document-metadata.html
@@ -513,35 +536,29 @@ $dokka.location:web5.sdk.dids/DidResolutionResult/hashCode/#/PointingToDeclarati
 $dokka.location:web5.sdk.dids/DidResolutionResult/toString/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids/-did-resolution-result/to-string.html
 $dokka.location:web5.sdk.dids/DidResolver///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids/-did-resolver/index.html
 $dokka.location:web5.sdk.dids/DidResolvers///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids/-did-resolvers/index.html
-$dokka.location:web5.sdk.dids/DidResolvers/addResolver/#kotlin.String#kotlin.Function2[kotlin.String,web5.sdk.dids.ResolveDidOptions?,web5.sdk.dids.DidResolutionResult]/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids/-did-resolvers/add-resolver.html
-$dokka.location:web5.sdk.dids/DidResolvers/resolve/#kotlin.String#web5.sdk.dids.ResolveDidOptions?/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids/-did-resolvers/resolve.html
-$dokka.location:web5.sdk.dids/JWKSerializer///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids/-j-w-k-serializer/index.html
-$dokka.location:web5.sdk.dids/JWKSerializer/JWKSerializer/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids/-j-w-k-serializer/-j-w-k-serializer.html
-$dokka.location:web5.sdk.dids/JWKSerializer/serialize/#[Error type: Unresolved type for JWK]?#[Error type: Unresolved type for JsonGenerator]#[Error type: Unresolved type for SerializerProvider]?/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids/-j-w-k-serializer/serialize.html
-$dokka.location:web5.sdk.dids/JwkDeserializer///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids/-jwk-deserializer/index.html
-$dokka.location:web5.sdk.dids/JwkDeserializer/JwkDeserializer/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids/-jwk-deserializer/-jwk-deserializer.html
-$dokka.location:web5.sdk.dids/JwkDeserializer/deserialize/#[Error type: Unresolved type for JsonParser]#[Error type: Unresolved type for DeserializationContext]/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids/-jwk-deserializer/deserialize.html
+$dokka.location:web5.sdk.dids/DidResolvers/addResolver/#kotlin.String#kotlin.Function1[kotlin.String,web5.sdk.dids.DidResolutionResult]/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids/-did-resolvers/add-resolver.html
+$dokka.location:web5.sdk.dids/DidResolvers/resolve/#kotlin.String/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids/-did-resolvers/resolve.html
 $dokka.location:web5.sdk.dids/PurposesDeserializer///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids/-purposes-deserializer/index.html
 $dokka.location:web5.sdk.dids/PurposesDeserializer/PurposesDeserializer/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids/-purposes-deserializer/-purposes-deserializer.html
 $dokka.location:web5.sdk.dids/PurposesDeserializer/deserialize/#[Error type: Unresolved type for JsonParser]#[Error type: Unresolved type for DeserializationContext]/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids/-purposes-deserializer/deserialize.html
 $dokka.location:web5.sdk.dids/ResolutionError.INTERNAL_ERROR///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}-web5 -s-d-k -documentation/web5.sdk.dids/-resolution-error/-i-n-t-e-r-n-a-l_-e-r-r-o-r/index.html
 $dokka.location:web5.sdk.dids/ResolutionError.INVALID_DID///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}-web5 -s-d-k -documentation/web5.sdk.dids/-resolution-error/-i-n-v-a-l-i-d_-d-i-d/index.html
+$dokka.location:web5.sdk.dids/ResolutionError.INVALID_PUBLIC_KEY///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}-web5 -s-d-k -documentation/web5.sdk.dids/-resolution-error/-i-n-v-a-l-i-d_-p-u-b-l-i-c_-k-e-y/index.html
 $dokka.location:web5.sdk.dids/ResolutionError.METHOD_NOT_SUPPORTED///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}-web5 -s-d-k -documentation/web5.sdk.dids/-resolution-error/-m-e-t-h-o-d_-n-o-t_-s-u-p-p-o-r-t-e-d/index.html
 $dokka.location:web5.sdk.dids/ResolutionError.NOT_FOUND///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}-web5 -s-d-k -documentation/web5.sdk.dids/-resolution-error/-n-o-t_-f-o-u-n-d/index.html
 $dokka.location:web5.sdk.dids/ResolutionError///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids/-resolution-error/index.html
 $dokka.location:web5.sdk.dids/ResolutionError/value/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids/-resolution-error/value.html
 $dokka.location:web5.sdk.dids/ResolutionError/valueOf/#kotlin.String/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids/-resolution-error/value-of.html
 $dokka.location:web5.sdk.dids/ResolutionError/values/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids/-resolution-error/values.html
-$dokka.location:web5.sdk.dids/ResolveDidOptions///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids/-resolve-did-options/index.html
 web5.sdk.common
 web5.sdk.credentials
 web5.sdk.credentials.model
-web5.sdk.credentials.util
 web5.sdk.crypto
+web5.sdk.crypto.jwk
 web5.sdk.dids
+web5.sdk.dids.did
 web5.sdk.dids.didcore
 web5.sdk.dids.exceptions
-web5.sdk.dids.extensions
 web5.sdk.dids.methods.dht
 web5.sdk.dids.methods.jwk
 web5.sdk.dids.methods.key
