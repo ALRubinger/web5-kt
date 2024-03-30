@@ -19,13 +19,15 @@
         "common/src/main/kotlin",
         "credentials/src/main/kotlin",
         "crypto/src/main/kotlin",
-        "dids/src/main/kotlin"
+        "dids/src/main/kotlin",
+        "jose/src/main/kotlin"
       ],
       "includes": [
         "common/module.md",
         "credentials/module.md",
         "crypto/module.md",
-        "dids/module.md"
+        "dids/module.md",
+        "jose/module.md"
       ]
     }
   ],
