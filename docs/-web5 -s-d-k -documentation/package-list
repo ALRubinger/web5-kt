@@ -550,6 +550,75 @@ $dokka.location:web5.sdk.dids/ResolutionError///PointingToDeclaration/-web5 -s-
 $dokka.location:web5.sdk.dids/ResolutionError/value/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids/-resolution-error/value.html
 $dokka.location:web5.sdk.dids/ResolutionError/valueOf/#kotlin.String/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids/-resolution-error/value-of.html
 $dokka.location:web5.sdk.dids/ResolutionError/values/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.dids/-resolution-error/values.html
+$dokka.location:web5.sdk.jose.jws////PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.jose.jws/index.html
+$dokka.location:web5.sdk.jose.jws/DecodedJws///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.jose.jws/-decoded-jws/index.html
+$dokka.location:web5.sdk.jose.jws/DecodedJws/DecodedJws/#web5.sdk.jose.jws.JwsHeader#kotlin.ByteArray#kotlin.ByteArray#kotlin.collections.List[kotlin.String]#kotlin.String?/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.jose.jws/-decoded-jws/-decoded-jws.html
+$dokka.location:web5.sdk.jose.jws/DecodedJws/header/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.jose.jws/-decoded-jws/header.html
+$dokka.location:web5.sdk.jose.jws/DecodedJws/parts/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.jose.jws/-decoded-jws/parts.html
+$dokka.location:web5.sdk.jose.jws/DecodedJws/payload/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.jose.jws/-decoded-jws/payload.html
+$dokka.location:web5.sdk.jose.jws/DecodedJws/signature/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.jose.jws/-decoded-jws/signature.html
+$dokka.location:web5.sdk.jose.jws/DecodedJws/signerDid/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.jose.jws/-decoded-jws/signer-did.html
+$dokka.location:web5.sdk.jose.jws/DecodedJws/verify/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.jose.jws/-decoded-jws/verify.html
+$dokka.location:web5.sdk.jose.jws/Jws///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.jose.jws/-jws/index.html
+$dokka.location:web5.sdk.jose.jws/Jws/decode/#kotlin.String#kotlin.ByteArray?/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.jose.jws/-jws/decode.html
+$dokka.location:web5.sdk.jose.jws/Jws/sign/#web5.sdk.dids.did.BearerDid#kotlin.ByteArray#kotlin.Boolean/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.jose.jws/-jws/sign.html
+$dokka.location:web5.sdk.jose.jws/Jws/verify/#kotlin.String#kotlin.ByteArray?/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.jose.jws/-jws/verify.html
+$dokka.location:web5.sdk.jose.jws/JwsHeader.Builder///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.jose.jws/-jws-header/-builder/index.html
+$dokka.location:web5.sdk.jose.jws/JwsHeader.Builder/Builder/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.jose.jws/-jws-header/-builder/-builder.html
+$dokka.location:web5.sdk.jose.jws/JwsHeader.Builder/algorithm/#kotlin.String/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.jose.jws/-jws-header/-builder/algorithm.html
+$dokka.location:web5.sdk.jose.jws/JwsHeader.Builder/build/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.jose.jws/-jws-header/-builder/build.html
+$dokka.location:web5.sdk.jose.jws/JwsHeader.Builder/keyId/#kotlin.String/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.jose.jws/-jws-header/-builder/key-id.html
+$dokka.location:web5.sdk.jose.jws/JwsHeader.Builder/type/#kotlin.String/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.jose.jws/-jws-header/-builder/type.html
+$dokka.location:web5.sdk.jose.jws/JwsHeader.Companion///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.jose.jws/-jws-header/-companion/index.html
+$dokka.location:web5.sdk.jose.jws/JwsHeader.Companion/fromBase64Url/#kotlin.String/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.jose.jws/-jws-header/-companion/from-base64-url.html
+$dokka.location:web5.sdk.jose.jws/JwsHeader.Companion/toBase64Url/#web5.sdk.jose.jws.JwsHeader/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.jose.jws/-jws-header/-companion/to-base64-url.html
+$dokka.location:web5.sdk.jose.jws/JwsHeader///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.jose.jws/-jws-header/index.html
+$dokka.location:web5.sdk.jose.jws/JwsHeader/JwsHeader/#kotlin.String?#kotlin.String?#kotlin.String?/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.jose.jws/-jws-header/-jws-header.html
+$dokka.location:web5.sdk.jose.jws/JwsHeader/alg/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.jose.jws/-jws-header/alg.html
+$dokka.location:web5.sdk.jose.jws/JwsHeader/kid/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.jose.jws/-jws-header/kid.html
+$dokka.location:web5.sdk.jose.jws/JwsHeader/typ/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.jose.jws/-jws-header/typ.html
+$dokka.location:web5.sdk.jose.jwt////PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.jose.jwt/index.html
+$dokka.location:web5.sdk.jose.jwt/DecodedJwt///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.jose.jwt/-decoded-jwt/index.html
+$dokka.location:web5.sdk.jose.jwt/DecodedJwt/DecodedJwt/#web5.sdk.jose.jws.JwsHeader#web5.sdk.jose.jwt.JwtClaimsSet#kotlin.ByteArray#kotlin.collections.List[kotlin.String]/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.jose.jwt/-decoded-jwt/-decoded-jwt.html
+$dokka.location:web5.sdk.jose.jwt/DecodedJwt/claims/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.jose.jwt/-decoded-jwt/claims.html
+$dokka.location:web5.sdk.jose.jwt/DecodedJwt/header/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.jose.jwt/-decoded-jwt/header.html
+$dokka.location:web5.sdk.jose.jwt/DecodedJwt/parts/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.jose.jwt/-decoded-jwt/parts.html
+$dokka.location:web5.sdk.jose.jwt/DecodedJwt/signature/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.jose.jwt/-decoded-jwt/signature.html
+$dokka.location:web5.sdk.jose.jwt/DecodedJwt/verify/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.jose.jwt/-decoded-jwt/verify.html
+$dokka.location:web5.sdk.jose.jwt/Jwt///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.jose.jwt/-jwt/index.html
+$dokka.location:web5.sdk.jose.jwt/Jwt/decode/#kotlin.String/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.jose.jwt/-jwt/decode.html
+$dokka.location:web5.sdk.jose.jwt/Jwt/sign/#web5.sdk.dids.did.BearerDid#web5.sdk.jose.jwt.JwtClaimsSet/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.jose.jwt/-jwt/sign.html
+$dokka.location:web5.sdk.jose.jwt/Jwt/verify/#kotlin.String/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.jose.jwt/-jwt/verify.html
+$dokka.location:web5.sdk.jose.jwt/JwtClaimsSet.Builder///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.jose.jwt/-jwt-claims-set/-builder/index.html
+$dokka.location:web5.sdk.jose.jwt/JwtClaimsSet.Builder/Builder/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.jose.jwt/-jwt-claims-set/-builder/-builder.html
+$dokka.location:web5.sdk.jose.jwt/JwtClaimsSet.Builder/audience/#kotlin.String/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.jose.jwt/-jwt-claims-set/-builder/audience.html
+$dokka.location:web5.sdk.jose.jwt/JwtClaimsSet.Builder/build/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.jose.jwt/-jwt-claims-set/-builder/build.html
+$dokka.location:web5.sdk.jose.jwt/JwtClaimsSet.Builder/expirationTime/#kotlin.Long/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.jose.jwt/-jwt-claims-set/-builder/expiration-time.html
+$dokka.location:web5.sdk.jose.jwt/JwtClaimsSet.Builder/issueTime/#kotlin.Long/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.jose.jwt/-jwt-claims-set/-builder/issue-time.html
+$dokka.location:web5.sdk.jose.jwt/JwtClaimsSet.Builder/issuer/#kotlin.String/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.jose.jwt/-jwt-claims-set/-builder/issuer.html
+$dokka.location:web5.sdk.jose.jwt/JwtClaimsSet.Builder/jwtId/#kotlin.String/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.jose.jwt/-jwt-claims-set/-builder/jwt-id.html
+$dokka.location:web5.sdk.jose.jwt/JwtClaimsSet.Builder/misc/#kotlin.String#kotlin.Any/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.jose.jwt/-jwt-claims-set/-builder/misc.html
+$dokka.location:web5.sdk.jose.jwt/JwtClaimsSet.Builder/notBeforeTime/#kotlin.Long/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.jose.jwt/-jwt-claims-set/-builder/not-before-time.html
+$dokka.location:web5.sdk.jose.jwt/JwtClaimsSet.Builder/subject/#kotlin.String/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.jose.jwt/-jwt-claims-set/-builder/subject.html
+$dokka.location:web5.sdk.jose.jwt/JwtClaimsSet///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.jose.jwt/-jwt-claims-set/index.html
+$dokka.location:web5.sdk.jose.jwt/JwtClaimsSet/JwtClaimsSet/#kotlin.String?#kotlin.String?#kotlin.String?#kotlin.Long?#kotlin.Long?#kotlin.Long?#kotlin.String?#kotlin.collections.Map[kotlin.String,kotlin.Any]/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.jose.jwt/-jwt-claims-set/-jwt-claims-set.html
+$dokka.location:web5.sdk.jose.jwt/JwtClaimsSet/aud/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.jose.jwt/-jwt-claims-set/aud.html
+$dokka.location:web5.sdk.jose.jwt/JwtClaimsSet/exp/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.jose.jwt/-jwt-claims-set/exp.html
+$dokka.location:web5.sdk.jose.jwt/JwtClaimsSet/iat/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.jose.jwt/-jwt-claims-set/iat.html
+$dokka.location:web5.sdk.jose.jwt/JwtClaimsSet/iss/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.jose.jwt/-jwt-claims-set/iss.html
+$dokka.location:web5.sdk.jose.jwt/JwtClaimsSet/jti/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.jose.jwt/-jwt-claims-set/jti.html
+$dokka.location:web5.sdk.jose.jwt/JwtClaimsSet/misc/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.jose.jwt/-jwt-claims-set/misc.html
+$dokka.location:web5.sdk.jose.jwt/JwtClaimsSet/nbf/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.jose.jwt/-jwt-claims-set/nbf.html
+$dokka.location:web5.sdk.jose.jwt/JwtClaimsSet/sub/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.jose.jwt/-jwt-claims-set/sub.html
+$dokka.location:web5.sdk.jose.jwt/JwtClaimsSet/toString/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.jose.jwt/-jwt-claims-set/to-string.html
+$dokka.location:web5.sdk.jose.jwt/JwtHeader///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.jose.jwt/-jwt-header/index.html
+$dokka.location:web5.sdk.jose////PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.jose/index.html
+$dokka.location:web5.sdk.jose/JwtClaimsSetDeserializer///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.jose/-jwt-claims-set-deserializer/index.html
+$dokka.location:web5.sdk.jose/JwtClaimsSetDeserializer/JwtClaimsSetDeserializer/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.jose/-jwt-claims-set-deserializer/-jwt-claims-set-deserializer.html
+$dokka.location:web5.sdk.jose/JwtClaimsSetDeserializer/deserialize/#[Error type: Unresolved type for JsonParser]#[Error type: Unresolved type for DeserializationContext]/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.jose/-jwt-claims-set-deserializer/deserialize.html
+$dokka.location:web5.sdk.jose/JwtClaimsSetSerializer///PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.jose/-jwt-claims-set-serializer/index.html
+$dokka.location:web5.sdk.jose/JwtClaimsSetSerializer/JwtClaimsSetSerializer/#/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.jose/-jwt-claims-set-serializer/-jwt-claims-set-serializer.html
+$dokka.location:web5.sdk.jose/JwtClaimsSetSerializer/serialize/#web5.sdk.jose.jwt.JwtClaimsSet#[Error type: Unresolved type for JsonGenerator]#[Error type: Unresolved type for SerializerProvider]?/PointingToDeclaration/-web5 -s-d-k -documentation/web5.sdk.jose/-jwt-claims-set-serializer/serialize.html
 web5.sdk.common
 web5.sdk.credentials
 web5.sdk.credentials.model
@@ -563,4 +632,7 @@ web5.sdk.dids.methods.dht
 web5.sdk.dids.methods.jwk
 web5.sdk.dids.methods.key
 web5.sdk.dids.methods.web
+web5.sdk.jose
+web5.sdk.jose.jws
+web5.sdk.jose.jwt
 
